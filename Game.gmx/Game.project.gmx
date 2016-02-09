@@ -11,6 +11,7 @@
     <sprite>sprites\effects_spr</sprite>
     <sprite>sprites\icons_spr</sprite>
     <sprite>sprites\setpieces_spr</sprite>
+    <sprite>sprites\paladin_spr</sprite>
     <sprites name="GUI_pieces">
       <sprite>sprites\menu_piece_1_spr</sprite>
       <sprite>sprites\menu_piece_2_spr</sprite>
@@ -43,12 +44,23 @@
       <script>scripts\pass.gml</script>
       <script>scripts\it.gml</script>
     </scripts>
+    <scripts name="player_scripts">
+      <script>scripts\player_init.gml</script>
+      <script>scripts\player_keyboard_listen.gml</script>
+      <script>scripts\player_move.gml</script>
+      <script>scripts\player_change_direction.gml</script>
+      <script>scripts\player_render.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
     </objects>
+    <object>objects\player_obj</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\test_room</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
