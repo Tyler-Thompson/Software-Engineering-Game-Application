@@ -1,0 +1,30 @@
+Meeting #1 (2/5/16 1:30-2:30PM)-- Tyler Thompson, Andrew Schutz
+
+Clients present: Rebekah McVey, Ben Coates
+
+MENU SYSTEMS
+------------
+1. I want to be able to access a menu when the game starts where I can start the game, load the game, exit, enter cheat codes, and go to options.
+2. I want a windowed and a full-screen option in the options screen.
+3. I want there to be an accessible mute/unmute option in the options screen.
+4. I want to be able to customize my control scheme from the options screen. (re-bind the keys)
+5. I want to be able to pause the game and access a menu where I can resume, exit, save progress, or go to options at any time by pressing a key. (ESC by default)
+
+BASIC GAME ENGINE SYSTEMS
+-------------------------
+6. I want to be able to choose my character from a preset list of characters, at least one of which must be female.
+7. I want to be able to control my character and walk around the world using the WASD keys by default.
+8. I want my character to have a health bar and a power bar which are displayed in a GUI to the user while in-game.
+9. I want enemies to be wandering around the world that will force the player into a battle if they are approached.
+10. I want a turn-based battle system where the player is given a choice of action and an unlimited amount of time to make their choice, then the enemy is given a choice of action, and the process repeats until one side is victorious.
+11. I want to have items that are easily viewable/usable in-game.
+12. I want time in-game to be integrated with real-life time (based on laptop/cell phone clock) that will change what the game looks like when it is night vs when it is day.
+13. I want there to be an in-game shop where you can spend in-game currency.
+
+GAME DESIGN SYSTEMS AND OBJECTIVES (All have dependencies on "Basic Game Engine Systems")
+-----------------------------------------------------------------------------------------
+14. I want there to be unique boss fights such that no boss fight is the same as the previous boss fight or any other boss fight.
+15. I want to be able to play in short intervals (~10 minutes) and be able to make quantifiable progress.
+16. I want to unlock the ability to customize my character’s appearance (unlock outfits, cosmetic options).
+17. I want a place to go to play mini-games when I get bored in the game world.
+18. I want there to be a definitive end to the game.
