@@ -51,15 +51,38 @@
       <script>scripts\player_change_direction.gml</script>
       <script>scripts\player_render.gml</script>
     </scripts>
+    <scripts name="menu_scripts">
+      <script>scripts\room_change.gml</script>
+      <script>scripts\start_init.gml</script>
+      <script>scripts\stop_game.gml</script>
+      <script>scripts\menu_init.gml</script>
+      <script>scripts\draw_menu_button.gml</script>
+      <script>scripts\button_init.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\menu_font</font>
+  </fonts>
   <objects name="objects">
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
     </objects>
     <object>objects\player_obj</object>
+    <objects name="menu_objects">
+      <object>objects\start_obj</object>
+      <object>objects\exit_obj</object>
+      <object>objects\cheat_codes_obj</object>
+      <object>objects\load_game_obj</object>
+      <object>objects\options_obj</object>
+      <object>objects\menu_obj</object>
+      <object>objects\menu_controller_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\test_room</room>
+    <room>rooms\menu_room</room>
+    <room>rooms\cheat_codes_room</room>
+    <room>rooms\options_room</room>
+    <room>rooms\first_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
