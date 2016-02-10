@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\shiny_trinkets_mp3</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\characters_spr</sprite>
     <sprite>sprites\items_spr</sprite>
@@ -58,6 +60,11 @@
       <script>scripts\menu_init.gml</script>
       <script>scripts\draw_menu_button.gml</script>
       <script>scripts\button_init.gml</script>
+      <script>scripts\mute_init.gml</script>
+    </scripts>
+    <scripts name="music_scripts">
+      <script>scripts\music_play.gml</script>
+      <script>scripts\change_mute_status.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -68,12 +75,15 @@
       <object>objects\TEST</object>
     </objects>
     <object>objects\player_obj</object>
+    <object>objects\music_controller_obj</object>
     <objects name="menu_objects">
       <object>objects\start_obj</object>
       <object>objects\exit_obj</object>
       <object>objects\cheat_codes_obj</object>
       <object>objects\load_game_obj</object>
       <object>objects\options_obj</object>
+      <object>objects\return_to_menu_obj</object>
+      <object>objects\mute_obj</object>
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
     </objects>

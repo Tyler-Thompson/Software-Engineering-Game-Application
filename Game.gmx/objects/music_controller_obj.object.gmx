@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/*
-* Calls the initialization code for the menu when it is created
+* Starts playing music based on the room the player is currently in
 */
-menu_init();
+
 music_play();
 </string>
           </argument>
