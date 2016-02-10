@@ -4,13 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\shiny_trinkets_mp3</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\characters_spr</sprite>
     <sprite>sprites\items_spr</sprite>
     <sprite>sprites\effects_spr</sprite>
     <sprite>sprites\icons_spr</sprite>
     <sprite>sprites\setpieces_spr</sprite>
+    <sprite>sprites\paladin_spr</sprite>
     <sprites name="GUI_pieces">
       <sprite>sprites\menu_piece_1_spr</sprite>
       <sprite>sprites\menu_piece_2_spr</sprite>
@@ -43,12 +46,54 @@
       <script>scripts\pass.gml</script>
       <script>scripts\it.gml</script>
     </scripts>
+    <scripts name="player_scripts">
+      <script>scripts\player_init.gml</script>
+      <script>scripts\player_keyboard_listen.gml</script>
+      <script>scripts\player_move.gml</script>
+      <script>scripts\player_change_direction.gml</script>
+      <script>scripts\player_render.gml</script>
+    </scripts>
+    <scripts name="menu_scripts">
+      <script>scripts\room_change.gml</script>
+      <script>scripts\start_init.gml</script>
+      <script>scripts\stop_game.gml</script>
+      <script>scripts\menu_init.gml</script>
+      <script>scripts\draw_menu_button.gml</script>
+      <script>scripts\button_init.gml</script>
+      <script>scripts\mute_init.gml</script>
+    </scripts>
+    <scripts name="music_scripts">
+      <script>scripts\music_play.gml</script>
+      <script>scripts\change_mute_status.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\menu_font</font>
+  </fonts>
   <objects name="objects">
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
     </objects>
+    <object>objects\player_obj</object>
+    <object>objects\music_controller_obj</object>
+    <objects name="menu_objects">
+      <object>objects\start_obj</object>
+      <object>objects\exit_obj</object>
+      <object>objects\cheat_codes_obj</object>
+      <object>objects\load_game_obj</object>
+      <object>objects\options_obj</object>
+      <object>objects\return_to_menu_obj</object>
+      <object>objects\mute_obj</object>
+      <object>objects\menu_obj</object>
+      <object>objects\menu_controller_obj</object>
+    </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\menu_room</room>
+    <room>rooms\cheat_codes_room</room>
+    <room>rooms\options_room</room>
+    <room>rooms\first_room</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
