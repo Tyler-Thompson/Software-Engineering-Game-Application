@@ -29,7 +29,6 @@
 * Calls the initialization code for the menu when it is created
 */
 menu_init();
-music_play();
 </string>
           </argument>
         </arguments>
