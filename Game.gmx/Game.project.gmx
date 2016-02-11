@@ -61,11 +61,14 @@
       <script>scripts\draw_menu_button.gml</script>
       <script>scripts\button_init.gml</script>
       <script>scripts\mute_init.gml</script>
+      <script>scripts\display_init.gml</script>
+      <script>scripts\change_display_status.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
       <script>scripts\change_mute_status.gml</script>
     </scripts>
+    <script>scripts\exit_game.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -86,6 +89,7 @@
       <object>objects\mute_obj</object>
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
+      <object>objects\display_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
