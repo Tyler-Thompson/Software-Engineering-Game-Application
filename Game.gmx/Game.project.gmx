@@ -95,13 +95,14 @@
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
       <object>objects\display_obj</object>
+      <object>objects\test_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\testing_room</room>
     <room>rooms\menu_room</room>
     <room>rooms\cheat_codes_room</room>
     <room>rooms\options_room</room>
+    <room>rooms\testing_room</room>
     <room>rooms\first_room</room>
   </rooms>
   <help>
