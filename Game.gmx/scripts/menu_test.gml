@@ -15,4 +15,18 @@ it("ensures the fullscreen button works", 1, window_get_fullscreen());
 change_display_status();
 it("ensures the fullscreen button changes back to windowed", 0, window_get_fullscreen());
 
+//menu tests
+menu_init();
+it("ensures start menu button exists after menu is initialized",1,instance_number(start_obj)==1);
+it("ensures load menu button exists after menu is initialized",1,instance_number(load_game_obj)==1);
+it("ensures options menu button exists after menu is initialized",1,instance_number(options_obj)==1);
+it("ensures cheat codes menu button exists after menu is initialized",1,instance_number(cheat_codes_obj)==1);
+it("ensures exit menu button exists after menu is initialized",1,instance_number(exit_obj)==1);
+//post-test instance clean-up
+with (menu_obj) 
+{
+    instance_destroy(); 
+}
+set_test_draw();
+
 return true;

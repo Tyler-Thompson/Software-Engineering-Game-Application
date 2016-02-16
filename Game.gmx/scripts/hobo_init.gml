@@ -4,10 +4,7 @@
 * Initializes the unit tests
 */
 
-//set drawing values
-draw_set_valign(fa_left);
-draw_set_halign(fa_top);
-draw_set_font(menu_font);
+set_test_draw();
 
 //set test_obj position
 x = 0; 
