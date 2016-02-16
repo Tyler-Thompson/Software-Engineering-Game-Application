@@ -25,13 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 10;
-test_plan = "";
-test_lines = "";
-test_results = "";
-is_complete = false;
-has_displayed_results = false;
-hobo_init();
+            <string>hobo_init();
 /*
 * Initialize test variables
 */
@@ -63,6 +57,7 @@ player_test_init();
     is_complete = true;
     //TEST LIST
     is_complete = (is_complete and player_test());
+    is_complete = (is_complete and menu_test());
     
     if(is_complete)
     {
@@ -102,6 +97,52 @@ player_test_init();
             <kind>1</kind>
             <string>draw_set_font(font0);
 draw_test();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scroll_text(scroll_speed);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scroll_text(-1*scroll_speed);
 </string>
           </argument>
         </arguments>
