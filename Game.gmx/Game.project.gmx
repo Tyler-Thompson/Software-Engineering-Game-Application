@@ -41,6 +41,13 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="test_scripts">
+      <script>scripts\player_test.gml</script>
+      <script>scripts\player_test_init.gml</script>
+      <script>scripts\menu_test.gml</script>
+      <script>scripts\scroll_text.gml</script>
+      <script>scripts\set_test_draw.gml</script>
+    </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
       <script>scripts\hobo_init.gml</script>
@@ -79,6 +86,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
+    <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
     <objects name="hobo_test_objs">
@@ -97,6 +105,7 @@
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
       <object>objects\display_obj</object>
+      <object>objects\test_obj</object>
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
     </objects>
@@ -105,6 +114,7 @@
     <room>rooms\menu_room</room>
     <room>rooms\cheat_codes_room</room>
     <room>rooms\options_room</room>
+    <room>rooms\testing_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
   </rooms>
