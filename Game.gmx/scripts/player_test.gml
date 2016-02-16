@@ -1,5 +1,5 @@
 /*
-* player_init tests
+* player tests
 */
 if (player_test_alarm == 0)
 {
@@ -68,6 +68,10 @@ switch(player_test_alarm)
         break;
     default:
         complete = true;
+        with (player)
+        {
+            instance_destroy();
+        } 
 }
 player_test_alarm += 1;
 return complete;
