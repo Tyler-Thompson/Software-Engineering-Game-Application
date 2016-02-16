@@ -19,7 +19,7 @@ run_test();
 
 if(expected==actual)
   {
-  pass(description);
+  pass();
   }
 else
   {
