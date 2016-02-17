@@ -4,5 +4,5 @@
 * appear as a different class than before
 */
 
-player_obj.sprite_num = (player_obj.sprite_num + 1) mod (array_length_1d(player_obj.spr_name));
-player_obj.sprite_index = player_obj.spr_name[player_obj.sprite_num];
+player_controller_obj.sprite_num = (player_controller_obj.sprite_num + 1) mod (array_length_1d(player_controller_obj.spr_name));
+player_obj.sprite_index = player_controller_obj.spr_name[player_controller_obj.sprite_num];

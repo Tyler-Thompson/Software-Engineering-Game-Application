@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>button_init(player_obj.sprite_visible_name[player_obj.sprite_num]);
+            <string>button_init(player_controller_obj.sprite_visible_name[player_controller_obj.sprite_num]);
 </string>
           </argument>
         </arguments>
