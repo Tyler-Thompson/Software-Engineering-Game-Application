@@ -47,7 +47,6 @@
       <script>scripts\menu_test.gml</script>
       <script>scripts\scroll_text.gml</script>
       <script>scripts\set_test_draw.gml</script>
-      <script>scripts\menu_test_init.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -65,7 +64,6 @@
       <script>scripts\player_change_direction.gml</script>
       <script>scripts\player_render.gml</script>
       <script>scripts\player_var_init.gml</script>
-      <script>scripts\player_controller_init.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -91,6 +89,11 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
+    <objects name="hobo_test_objs">
+      <object>objects\TEST</object>
+    </objects>
+    <object>objects\player_obj</object>
+    <object>objects\music_controller_obj</object>
     <objects name="menu_objects">
       <object>objects\start_obj</object>
       <object>objects\exit_obj</object>
@@ -102,16 +105,13 @@
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
       <object>objects\display_obj</object>
-      <object>objects\test_obj</object>
+<<<<<<< HEAD
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
+=======
+      <object>objects\test_obj</object>
+>>>>>>> develop
     </objects>
-    <objects name="hobo_test_objs">
-      <object>objects\TEST</object>
-    </objects>
-    <object>objects\player_obj</object>
-    <object>objects\music_controller_obj</object>
-    <object>objects\player_controller_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

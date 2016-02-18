@@ -30,6 +30,7 @@
 * Initialize test variables
 */
 player_test_init();
+menu_test_init();
 </string>
           </argument>
         </arguments>

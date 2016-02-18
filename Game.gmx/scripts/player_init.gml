@@ -12,3 +12,4 @@ RIGHT_DIRECTION = 1;
 movement_speed = 2;
 image_speed = 0.1;
 player_direction = LEFT_DIRECTION;
+sprite_index = player_controller_obj.spr_name[player_controller_obj.sprite_num];

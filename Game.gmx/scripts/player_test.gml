@@ -67,11 +67,11 @@ switch(player_test_alarm)
         keyboard_key_release(ord('S'));
         break;
     default:
-        complete = true;
+        player_complete = true;
         with (player)
         {
             instance_destroy();
         } 
 }
 player_test_alarm += 1;
-return complete;
+return player_complete;
