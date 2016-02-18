@@ -47,6 +47,7 @@
       <script>scripts\menu_test.gml</script>
       <script>scripts\scroll_text.gml</script>
       <script>scripts\set_test_draw.gml</script>
+      <script>scripts\menu_test_init.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -90,11 +91,6 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <objects name="hobo_test_objs">
-      <object>objects\TEST</object>
-    </objects>
-    <object>objects\player_obj</object>
-    <object>objects\music_controller_obj</object>
     <objects name="menu_objects">
       <object>objects\start_obj</object>
       <object>objects\exit_obj</object>
@@ -110,6 +106,11 @@
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
     </objects>
+    <objects name="hobo_test_objs">
+      <object>objects\TEST</object>
+    </objects>
+    <object>objects\player_obj</object>
+    <object>objects\music_controller_obj</object>
     <object>objects\player_controller_obj</object>
   </objects>
   <rooms name="rooms">
