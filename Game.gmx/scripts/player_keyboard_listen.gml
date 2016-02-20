@@ -3,7 +3,7 @@
 *
 * Listens to keyboard events for player_obj
 */
- 
+
 //check if player is pressing 'left' button
 if keyboard_check(ord('A'))
 {
