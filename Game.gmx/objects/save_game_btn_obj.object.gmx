@@ -3,7 +3,7 @@
   <spriteName>menu_piece_2_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>menu_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,11 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-* When the object is initialized, it calls a script to set the text on the button.
-*/
-
-button_init("Load Game");
+            <string>button_init("Save Progress");
 </string>
           </argument>
         </arguments>
@@ -52,7 +48,7 @@ button_init("Load Game");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>load_game();
+            <string>save_game();
 </string>
           </argument>
         </arguments>
