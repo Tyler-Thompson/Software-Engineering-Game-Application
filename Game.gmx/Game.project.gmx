@@ -79,6 +79,7 @@
       <script>scripts\change_display_status.gml</script>
       <script>scripts\next_room.gml</script>
       <script>scripts\increment_player_sprite.gml</script>
+      <script>scripts\change_player_sprite.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -105,6 +106,9 @@
       <object>objects\test_obj</object>
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
+      <object>objects\wizard_btn_obj</object>
+      <object>objects\paladin_btn_obj</object>
+      <object>objects\priestess_btn_obj</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
