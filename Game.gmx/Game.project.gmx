@@ -82,6 +82,9 @@
       <script>scripts\change_player_sprite.gml</script>
       <script>scripts\save_game.gml</script>
       <script>scripts\load_game.gml</script>
+      <script>scripts\cheatbox_init.gml</script>
+      <script>scripts\draw_cheatbox.gml</script>
+      <script>scripts\submit_cheat_code.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -112,6 +115,8 @@
       <object>objects\paladin_btn_obj</object>
       <object>objects\priestess_btn_obj</object>
       <object>objects\save_game_btn_obj</object>
+      <object>objects\cheat_code_textbox_obj</object>
+      <object>objects\submit_cheat_code_obj</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
