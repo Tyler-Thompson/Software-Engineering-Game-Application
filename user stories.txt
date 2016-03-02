@@ -15,8 +15,8 @@ BASIC GAME ENGINE SYSTEMS
 6. I want to be able to choose my character from a preset list of characters, at least one of which must be female.
 7. I want to be able to control my character and walk around the world using the WASD keys by default.
 8. I want my character to have a health bar and a power bar which are displayed in a GUI to the user while in-game.
-9. I want enemies to wander when they are a significant distance from the player, and move toward the player if they come within a given radius of aggression.
-19. I want the player to be forced into a battle if they are approached by an enemy.
+9. I want enemies to move toward the player if they come within a given radius of aggression, and wander if they are outside the radius of aggression.
+19. I want a turn-based battle to begin if an enemy makes contact with the player.
 10. I want a turn-based battle system where the player is given a choice of action and an unlimited amount of time to make their choice, then the enemy is given a choice of action, and the process repeats until one side is victorious.
 11. I want to have items that are easily viewable/usable in-game.
 12. I want time in-game to be integrated with real-life time (based on laptop/cell phone clock) that will change what the game looks like when it is night vs when it is day.
