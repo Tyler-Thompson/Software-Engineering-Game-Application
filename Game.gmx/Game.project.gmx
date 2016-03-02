@@ -19,6 +19,8 @@
       <sprite>sprites\menu_piece_3_spr</sprite>
       <sprite>sprites\menu_piece_4_spr</sprite>
       <sprite>sprites\menu_piece_5_spr</sprite>
+      <sprite>sprites\hp_bar_spr</sprite>
+      <sprite>sprites\power_bar_spr</sprite>
     </sprites>
     <sprites name="characters">
       <sprite>sprites\priestess_spr</sprite>
@@ -90,6 +92,10 @@
       <script>scripts\music_play.gml</script>
       <script>scripts\change_mute_status.gml</script>
     </scripts>
+    <scripts name="gui_scripts">
+      <script>scripts\gui_render.gml</script>
+      <script>scripts\gui_init.gml</script>
+    </scripts>
     <script>scripts\exit_game.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -124,6 +130,7 @@
     <object>objects\player_obj</object>
     <object>objects\music_controller_obj</object>
     <object>objects\player_controller_obj</object>
+    <object>objects\gui_controller_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

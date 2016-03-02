@@ -1,6 +1,11 @@
 /*
 * Initializes constants for the player controller object
 */
+max_hp = 100;
+max_power = 100;
+current_hp = max_hp;
+current_power = max_power;
+
 sprite_num = 0;
 sprite_x_scale = 1;
 sprite_y_scale = 1;
