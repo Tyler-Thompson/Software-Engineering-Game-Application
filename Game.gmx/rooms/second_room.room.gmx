@@ -53,6 +53,9 @@
   <instances>
     <instance objName="player_obj" x="240" y="120" name="inst_6439F547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="save_game_btn_obj" x="432" y="216" name="inst_087A5920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="skeleton_obj" x="24" y="168" name="inst_B84C156B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="skeleton_obj" x="24" y="120" name="inst_87A940BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="purple_slime_obj" x="432" y="96" name="inst_E23024C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

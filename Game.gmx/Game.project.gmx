@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\shiny_trinkets_mp3</sound>
+    <sound>sound\alert_wav</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\characters_spr</sprite>
@@ -13,6 +14,7 @@
     <sprite>sprites\effects_spr</sprite>
     <sprite>sprites\icons_spr</sprite>
     <sprite>sprites\setpieces_spr</sprite>
+    <sprite>sprites\exclamation_effect_spr</sprite>
     <sprites name="GUI_pieces">
       <sprite>sprites\menu_piece_1_spr</sprite>
       <sprite>sprites\menu_piece_2_spr</sprite>
@@ -26,6 +28,8 @@
       <sprite>sprites\priestess_spr</sprite>
       <sprite>sprites\wizard_spr</sprite>
       <sprite>sprites\paladin_spr</sprite>
+      <sprite>sprites\skeleton_spr</sprite>
+      <sprite>sprites\purple_slime_spr</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -91,10 +95,25 @@
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
       <script>scripts\change_mute_status.gml</script>
+      <script>scripts\sound_effect_play.gml</script>
     </scripts>
     <scripts name="gui_scripts">
       <script>scripts\gui_render.gml</script>
       <script>scripts\gui_init.gml</script>
+    </scripts>
+    <scripts name="enemy_scripts">
+      <script>scripts\enemy_init.gml</script>
+      <script>scripts\enemy_render.gml</script>
+      <script>scripts\enemy_act.gml</script>
+      <script>scripts\enemy_wander.gml</script>
+      <script>scripts\enemy_approach_player.gml</script>
+      <script>scripts\enemy_check_direction.gml</script>
+      <script>scripts\enemy_avoid_collision.gml</script>
+    </scripts>
+    <scripts name="effect_scripts">
+      <script>scripts\effect_init.gml</script>
+      <script>scripts\effect_render.gml</script>
+      <script>scripts\effect_fade.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
   </scripts>
@@ -126,6 +145,14 @@
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
+    </objects>
+    <objects name="enemy_objs">
+      <object>objects\enemy_parent_obj</object>
+      <object>objects\skeleton_obj</object>
+      <object>objects\purple_slime_obj</object>
+    </objects>
+    <objects name="effect_objs">
+      <object>objects\exclamation_effect_obj</object>
     </objects>
     <object>objects\player_obj</object>
     <object>objects\music_controller_obj</object>
