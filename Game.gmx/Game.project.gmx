@@ -109,6 +109,7 @@
       <script>scripts\enemy_approach_player.gml</script>
       <script>scripts\enemy_check_direction.gml</script>
       <script>scripts\enemy_avoid_collision.gml</script>
+      <script>scripts\initiate_battle.gml</script>
     </scripts>
     <scripts name="effect_scripts">
       <script>scripts\effect_init.gml</script>
@@ -164,6 +165,7 @@
     <room>rooms\cheat_codes_room</room>
     <room>rooms\options_room</room>
     <room>rooms\testing_room</room>
+    <room>rooms\battle_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
   </rooms>
