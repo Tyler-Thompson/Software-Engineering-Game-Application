@@ -168,6 +168,7 @@
     <room>rooms\battle_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
+    <room>rooms\pause_menu_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
