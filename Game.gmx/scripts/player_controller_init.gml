@@ -3,8 +3,12 @@
 */
 max_hp = 100;
 max_power = 100;
+max_defense = 20;
+my_attack = 10;
+my_defense = 20;
 current_hp = max_hp;
 current_power = max_power;
+
 
 sprite_num = 0;
 sprite_x_scale = 1;

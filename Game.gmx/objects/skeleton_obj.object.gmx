@@ -28,7 +28,7 @@
             <string>//overrides default enemy init
 
 //enemy_init(speed, vision)
-enemy_init(1, 96);
+enemy_init(1, 96, 'skeleton');
 </string>
           </argument>
         </arguments>
