@@ -1,5 +1,5 @@
 /*
-* enemy_init(speed, vision)
+* enemy_init(speed, vision, name)
 *
 * Initializes an enemy object.
 *
@@ -11,3 +11,5 @@ image_speed = 0.1;
 
 my_speed = argument0;
 my_vision = argument1;
+my_name = argument2;
+
