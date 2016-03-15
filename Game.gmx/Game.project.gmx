@@ -91,6 +91,7 @@
       <script>scripts\cheatbox_init.gml</script>
       <script>scripts\draw_cheatbox.gml</script>
       <script>scripts\submit_cheat_code.gml</script>
+      <script>scripts\resume.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -143,6 +144,7 @@
       <object>objects\save_game_btn_obj</object>
       <object>objects\cheat_code_textbox_obj</object>
       <object>objects\submit_cheat_code_obj</object>
+      <object>objects\continue_game_obj</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
@@ -168,7 +170,6 @@
     <room>rooms\battle_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
-    <room>rooms\pause_menu_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
