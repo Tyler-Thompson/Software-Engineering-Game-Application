@@ -30,6 +30,7 @@
       <sprite>sprites\paladin_spr</sprite>
       <sprite>sprites\skeleton_spr</sprite>
       <sprite>sprites\purple_slime_spr</sprite>
+      <sprite>sprites\empty_char_spr</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -55,6 +56,9 @@
       <script>scripts\set_test_draw.gml</script>
       <script>scripts\menu_test_init.gml</script>
       <script>scripts\gui_test.gml</script>
+      <script>scripts\enemy_test.gml</script>
+      <script>scripts\enemy_test_init.gml</script>
+      <script>scripts\gui_test_init.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>

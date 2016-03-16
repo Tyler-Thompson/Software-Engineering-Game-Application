@@ -31,6 +31,8 @@
 */
 player_test_init();
 menu_test_init();
+gui_test_init();
+enemy_test_init();
 </string>
           </argument>
         </arguments>
@@ -60,6 +62,7 @@ menu_test_init();
     is_complete = (is_complete and player_test());
     is_complete = (is_complete and menu_test());
     is_complete = (is_complete and gui_test());
+    is_complete = (is_complete and enemy_test());
     
     if(is_complete)
     {
