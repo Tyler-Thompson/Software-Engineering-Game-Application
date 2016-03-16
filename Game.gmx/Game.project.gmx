@@ -59,6 +59,7 @@
       <script>scripts\enemy_test.gml</script>
       <script>scripts\enemy_test_init.gml</script>
       <script>scripts\gui_test_init.gml</script>
+      <script>scripts\battle_test.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>

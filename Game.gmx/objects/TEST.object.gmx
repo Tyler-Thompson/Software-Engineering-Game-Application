@@ -33,6 +33,7 @@ player_test_init();
 menu_test_init();
 gui_test_init();
 enemy_test_init();
+battle_test();
 </string>
           </argument>
         </arguments>
