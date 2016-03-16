@@ -32,6 +32,7 @@
       <sprite>sprites\purple_slime_spr</sprite>
       <sprite>sprites\empty_char_spr</sprite>
     </sprites>
+    <sprite>sprites\save_effect_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\world_bkg</background>
@@ -96,6 +97,8 @@
       <script>scripts\cheatbox_init.gml</script>
       <script>scripts\draw_cheatbox.gml</script>
       <script>scripts\submit_cheat_code.gml</script>
+      <script>scripts\resume.gml</script>
+      <script>scripts\draw_paused_title.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -158,6 +161,8 @@
       <object>objects\save_game_btn_obj</object>
       <object>objects\cheat_code_textbox_obj</object>
       <object>objects\submit_cheat_code_obj</object>
+      <object>objects\continue_game_obj</object>
+      <object>objects\paused_title_obj</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
@@ -171,6 +176,7 @@
     </objects>
     <objects name="effect_objs">
       <object>objects\exclamation_effect_obj</object>
+      <object>objects\game_saved_effect_obj</object>
     </objects>
     <objects name="player_objs">
       <object>objects\player_battle_obj</object>
