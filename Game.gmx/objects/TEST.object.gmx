@@ -59,6 +59,7 @@ menu_test_init();
     //TEST LIST
     is_complete = (is_complete and player_test());
     is_complete = (is_complete and menu_test());
+    is_complete = (is_complete and gui_test());
     
     if(is_complete)
     {
