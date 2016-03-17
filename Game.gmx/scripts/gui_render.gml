@@ -23,7 +23,7 @@ if ((instance_number(player_obj) + instance_number(player_battle_obj)) != 0 && r
     draw_text(HP_BAR_X,HP_BAR_Y,"HP: "+string(round(player_controller_obj.current_hp))+"/"+string(player_controller_obj.max_hp));
     
     draw_sprite_ext(power_bar_spr,floor((player_controller_obj.my_defense/player_controller_obj.max_defense)*45),DEFENSE_BAR_X,DEFENSE_BAR_Y,image_xscale,image_yscale,direction,image_blend,image_alpha);
-    draw_text(DEFENSE_BAR_X,DEFENSE_BAR_Y,"DEFENSE: "+string(round(player_controller_obj.my_defense))+"/"+string(player_controller_obj.max_defense));
+    draw_text(DEFENSE_BAR_X,DEFENSE_BAR_Y,"ARMOR: "+string(round(player_controller_obj.my_defense))+"/"+string(player_controller_obj.max_defense));
     
     draw_sprite_ext(power_bar_spr,floor((player_controller_obj.current_power/player_controller_obj.max_power)*45),POWER_BAR_X,POWER_BAR_Y,image_xscale,image_yscale,direction,image_blend,image_alpha);
     draw_text(POWER_BAR_X,POWER_BAR_Y,"POWER: "+string(round(player_controller_obj.current_power))+"/"+string(player_controller_obj.max_power));
@@ -43,6 +43,6 @@ if(room == battle_room)
     draw_text(POWER_BAR_X,POWER_BAR_Y,"POWER: "+string(round(battle_controller_obj.enemy_power))+"/"+string(battle_controller_obj.enemy_max_power));
     
     draw_sprite_ext(power_bar_spr,floor((battle_controller_obj.enemy_defense/battle_controller_obj.enemy_max_defense)*45),DEFENSE_BAR_X,DEFENSE_BAR_Y,image_xscale,image_yscale,direction,image_blend,image_alpha);
-    draw_text(DEFENSE_BAR_X,DEFENSE_BAR_Y,"DEFENSE: "+string(round(battle_controller_obj.enemy_defense))+"/"+string(battle_controller_obj.enemy_max_defense));
+    draw_text(DEFENSE_BAR_X,DEFENSE_BAR_Y,"ARMOR: "+string(round(battle_controller_obj.enemy_defense))+"/"+string(battle_controller_obj.enemy_max_defense));
 }
 
