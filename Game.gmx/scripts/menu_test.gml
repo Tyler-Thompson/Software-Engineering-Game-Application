@@ -26,15 +26,6 @@ if(menu_counter == 0)
     it("ensures exit menu button exists after menu is initialized",1,instance_number(exit_obj)==1);
 }
 
-//Pause menu tests
-exit_game();
-it("ensures pause title exists after the game is paused",1,instance_number(paused_title_obj)==1);
-it("ensures continue menu button exists after the game is paused",1,instance_number(continue_game_obj)==1);
-it("ensures options menu button exists after the game is paused",1,instance_number(options_obj)==1);
-it("ensures save game menu button exists after the game is paused",1,instance_number(save_game_btn_obj)==1);
-it("ensures exit game menu button exists after the game is paused",1,instance_number(exit_obj)==1);
-resume();
-
 //Character selection tests
 switch(menu_counter)
 {
@@ -83,8 +74,19 @@ switch(menu_counter)
         {
             instance_destroy();
         }
+        break;
+    case 4:
+        //Pause menu tests
+        exit_game();
+        it("ensures pause title exists after the game is paused",1,instance_number(paused_title_obj)==1);
+        it("ensures continue menu button exists after the game is paused",1,instance_number(continue_game_obj)==1);
+        it("ensures options menu button exists after the game is paused",1,instance_number(options_obj)==1);
+        it("ensures save game menu button exists after the game is paused",1,instance_number(save_game_btn_obj)==1);
+        it("ensures exit game menu button exists after the game is paused",1,instance_number(exit_obj)==1);
+        resume();
         menu_complete = true;
         break;
+        
 }
 //post-test instance clean-up
 with (menu_obj) 
