@@ -4,7 +4,7 @@
 * deactivates all instances and activates pause menu
 */
 
-if (room == second_room || room == battle_room)
+if (room == second_room || room == battle_room || room == testing_room)
     {
     instance_deactivate_all(true);
     
