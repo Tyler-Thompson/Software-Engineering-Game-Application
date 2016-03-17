@@ -45,3 +45,4 @@ if(room == battle_room)
     draw_sprite_ext(power_bar_spr,floor((battle_controller_obj.enemy_defense/battle_controller_obj.enemy_max_defense)*45),DEFENSE_BAR_X,DEFENSE_BAR_Y,image_xscale,image_yscale,direction,image_blend,image_alpha);
     draw_text(DEFENSE_BAR_X,DEFENSE_BAR_Y,"DEFENSE: "+string(round(battle_controller_obj.enemy_defense))+"/"+string(battle_controller_obj.enemy_max_defense));
 }
+
