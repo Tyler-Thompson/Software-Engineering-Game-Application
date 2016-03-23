@@ -100,6 +100,11 @@
       <script>scripts\submit_cheat_code.gml</script>
       <script>scripts\resume.gml</script>
       <script>scripts\draw_paused_title.gml</script>
+      <script>scripts\rebind_init.gml</script>
+      <script>scripts\rebind_key_listener.gml</script>
+      <script>scripts\rebind_set_last_key.gml</script>
+      <script>scripts\rebind_kill_listeners.gml</script>
+      <script>scripts\rebind_click.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -149,6 +154,7 @@
       <object>objects\load_game_obj</object>
       <object>objects\options_obj</object>
       <object>objects\return_to_menu_obj</object>
+      <object>objects\return_to_options_obj</object>
       <object>objects\mute_obj</object>
       <object>objects\menu_obj</object>
       <object>objects\menu_controller_obj</object>
@@ -164,6 +170,11 @@
       <object>objects\submit_cheat_code_obj</object>
       <object>objects\continue_game_obj</object>
       <object>objects\paused_title_obj</object>
+      <object>objects\rebind_keys_obj</object>
+      <object>objects\rebind_left_obj</object>
+      <object>objects\rebind_right_obj</object>
+      <object>objects\rebind_up_obj</object>
+      <object>objects\rebind_down_key</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
@@ -195,6 +206,7 @@
     <room>rooms\menu_room</room>
     <room>rooms\cheat_codes_room</room>
     <room>rooms\options_room</room>
+    <room>rooms\rebind_room</room>
     <room>rooms\testing_room</room>
     <room>rooms\battle_room</room>
     <room>rooms\first_room</room>

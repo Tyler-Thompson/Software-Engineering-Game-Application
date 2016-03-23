@@ -20,4 +20,9 @@ sprite_visible_name[0] = "Paladin";
 sprite_visible_name[1] = "Wizard";
 sprite_visible_name[2] = "Priestess";
 
+//player control key-bindings
+left_key = ord('A');
+right_key = ord('D');
+up_key = ord('W');
+down_key = ord('S');
 
