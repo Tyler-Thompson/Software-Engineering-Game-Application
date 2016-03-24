@@ -9,7 +9,6 @@ my_defense = 20;
 current_hp = max_hp;
 current_power = max_power;
 
-
 sprite_num = 0;
 sprite_x_scale = 1;
 sprite_y_scale = 1;

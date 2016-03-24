@@ -79,6 +79,8 @@
       <script>scripts\player_render.gml</script>
       <script>scripts\player_var_init.gml</script>
       <script>scripts\player_controller_init.gml</script>
+      <script>scripts\add_item_to_inventory.gml</script>
+      <script>scripts\item_create.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -201,6 +203,7 @@
       <object>objects\battle_controller_obj</object>
     </objects>
     <object>objects\basic_attack_btn</object>
+    <object>objects\item_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>
