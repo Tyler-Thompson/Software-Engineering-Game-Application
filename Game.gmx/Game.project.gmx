@@ -141,6 +141,7 @@
       <script>scripts\effect_fade.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
+    <script>scripts\check_time.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
