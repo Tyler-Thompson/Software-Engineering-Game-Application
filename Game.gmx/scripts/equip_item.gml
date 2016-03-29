@@ -1,5 +1,5 @@
 /*
- * equip_item(string item)
+ * equip_item(string item, int location)
  * takes as input the name of an item in the player's inventory - and equips it
  * if the equipping was successfull, returns true, returns false otherwise
  */
@@ -27,6 +27,6 @@ if(is_in_inventory(argument0) and not is_equipped(argument0))
 }
 if(to_return)
 {
-  remove_from_inventory(argument0);
+  remove_from_inventory(argument0,argument1);
 }
 return to_return;
