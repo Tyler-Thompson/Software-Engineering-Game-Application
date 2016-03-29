@@ -32,13 +32,16 @@
       <sprite>sprites\skeleton_spr</sprite>
       <sprite>sprites\purple_slime_spr</sprite>
       <sprite>sprites\empty_char_spr</sprite>
+      <sprite>sprites\shopkeeper_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
+      <sprite>sprites\ice_sword_spr</sprite>
     </sprites>
+    <sprite>sprites\block_basic_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\world_bkg</background>
@@ -175,6 +178,16 @@
         <script>scripts\attack.gml</script>
       </scripts>
     </scripts>
+    <scripts name="npc_scripts">
+      <script>scripts\npc_init.gml</script>
+      <script>scripts\npc_render.gml</script>
+      <script>scripts\npc_dialog_loop.gml</script>
+    </scripts>
+    <scripts name="shop_scripts">
+      <script>scripts\buyable_init.gml</script>
+      <script>scripts\buyable_collision_detect.gml</script>
+      <script>scripts\buyable_render.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -241,6 +254,12 @@
     </objects>
     <object>objects\basic_attack_btn</object>
     <object>objects\item_obj</object>
+    <object>objects\block_parent</object>
+    <object>objects\block_basic_obj</object>
+    <object>objects\shopkeeper_obj</object>
+    <object>objects\buyable_parent</object>
+    <object>objects\buyable_health_potion_obj</object>
+    <object>objects\buyable_ice_sword_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

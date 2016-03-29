@@ -3,6 +3,7 @@
  * this script should be called when the player wins a battle
  */
 
+with(draw_text_effect_obj) { instance_destroy(); }
 OFFSET_HEIGHT = 2;
 with(player)
 { 
