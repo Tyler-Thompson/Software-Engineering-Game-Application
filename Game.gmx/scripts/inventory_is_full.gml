@@ -4,4 +4,4 @@
  * and false otherwise
  */
  
-return player_controller_obj.player_inventory_size >= player_controller_obj.MAX_INVENOTRY_SIZE;
+return player_controller_obj.player_inventory_size >= player_controller_obj.MAX_INVENTORY_SIZE;
