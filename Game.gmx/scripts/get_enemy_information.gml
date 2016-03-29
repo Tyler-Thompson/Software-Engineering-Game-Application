@@ -10,6 +10,7 @@ for(i = 0; i < array_height_2d(enemy_information_controller.enemy); ++i)
 {
     if(enemy_information_controller.enemy[i, 0] == name)
     {
+        battle_controller_obj.enemy_name = name;
         battle_controller_obj.enemy_level = real(enemy_information_controller.enemy[i,1]);
         battle_controller_obj.enemy_region = enemy_information_controller.enemy[i,2];
         battle_controller_obj.enemy_attack = real(enemy_information_controller.enemy[i,3]);
