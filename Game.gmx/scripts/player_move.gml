@@ -7,5 +7,12 @@
 * @argument1: amount to change player's y value by
 */
 
-x += argument0;
-y += argument1;
+if (!place_meeting(x+argument0,y,block_parent))
+{
+    x += argument0;
+}
+
+if (!place_meeting(x,y+argument1,block_parent))
+{
+    y += argument1;
+}
