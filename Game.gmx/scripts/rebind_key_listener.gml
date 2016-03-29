@@ -11,6 +11,11 @@ listening = true;
 //checks for any key press; rebinds if detected
 if (last_key != keyboard_lastkey) 
 {
+    if (keyboard_lastkey == player_controller_obj.left_key || keyboard_lastkey == player_controller_obj.right_key || keyboard_lastkey == player_controller_obj.up_key || keyboard_lastkey == player_controller_obj.down_key)
+    {
+        //aborts script if key pressed is already bound
+        exit;
+    }
     if (argument0 == LEFT_KEY)
     {
         player_controller_obj.left_key = keyboard_lastkey;
