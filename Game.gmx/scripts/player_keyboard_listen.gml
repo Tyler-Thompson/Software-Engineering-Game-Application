@@ -36,7 +36,7 @@ for(keyboard_listen_i = 1; keyboard_listen_i <= 8; ++keyboard_listen_i)
 {
   if(keyboard_check(ord(string(keyboard_listen_i))))
   {
-    use_item(player_controller_obj.player_inventory[(keyboard_listen_i-1) % 10]);
+    use_item(player_controller_obj.player_inventory[(keyboard_listen_i-1) % 10],(keyboard_listen_i-1)%10);
   }
 }
 for(keyboard_listen_i = 9; keyboard_listen_i <= 10; ++keyboard_listen_i)

@@ -102,6 +102,7 @@
       <script>scripts\get_item_sprite.gml</script>
       <script>scripts\use_item.gml</script>
       <script>scripts\remove_from_inventory.gml</script>
+      <script>scripts\inventory_is_full.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>

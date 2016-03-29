@@ -16,6 +16,10 @@ equip[1] = "";
 player_inventory[0] = "simple armor";
 player_inventory[1] = "basic health potion";
 player_inventory[2] = "simple sword"
+for(i = 3; i < MAX_INVENTORY_SIZE; ++i)
+{
+  player_inventory[i] = "";
+}
 current_gold = 10;
 sprite_num = 0;
 sprite_x_scale = 1;
