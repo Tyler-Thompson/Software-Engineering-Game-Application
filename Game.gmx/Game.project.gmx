@@ -18,6 +18,7 @@
     <sprites name="GUI_pieces">
       <sprite>sprites\menu_piece_1_spr</sprite>
       <sprite>sprites\menu_piece_2_spr</sprite>
+      <sprite>sprites\inventory_box_spr</sprite>
       <sprite>sprites\menu_piece_3_spr</sprite>
       <sprite>sprites\menu_piece_4_spr</sprite>
       <sprite>sprites\menu_piece_5_spr</sprite>
@@ -33,6 +34,11 @@
       <sprite>sprites\empty_char_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
+    <sprites name="items">
+      <sprite>sprites\health_pot_spr</sprite>
+      <sprite>sprites\basic_armor_spr</sprite>
+      <sprite>sprites\basic_sword_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\world_bkg</background>
@@ -79,6 +85,20 @@
       <script>scripts\player_render.gml</script>
       <script>scripts\player_var_init.gml</script>
       <script>scripts\player_controller_init.gml</script>
+      <script>scripts\add_item_to_inventory.gml</script>
+      <script>scripts\item_create.gml</script>
+      <script>scripts\item_information_init.gml</script>
+      <script>scripts\equip_item.gml</script>
+      <script>scripts\is_in_inventory.gml</script>
+      <script>scripts\is_weapon.gml</script>
+      <script>scripts\is_armor.gml</script>
+      <script>scripts\get_item_info.gml</script>
+      <script>scripts\is_equipped.gml</script>
+      <script>scripts\unequip.gml</script>
+      <script>scripts\display_inventory.gml</script>
+      <script>scripts\get_item_sprite.gml</script>
+      <script>scripts\use_item.gml</script>
+      <script>scripts\remove_from_inventory.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -105,6 +125,8 @@
       <script>scripts\rebind_set_last_key.gml</script>
       <script>scripts\rebind_kill_listeners.gml</script>
       <script>scripts\rebind_click.gml</script>
+      <script>scripts\return_to_previous_room.gml</script>
+      <script>scripts\change_previous_and_current_room.gml</script>
     </scripts>
     <scripts name="music_scripts">
       <script>scripts\music_play.gml</script>
@@ -123,24 +145,36 @@
       <script>scripts\enemy_approach_player.gml</script>
       <script>scripts\enemy_check_direction.gml</script>
       <script>scripts\enemy_avoid_collision.gml</script>
-      <script>scripts\initiate_battle.gml</script>
-      <script>scripts\set_up_battle.gml</script>
       <script>scripts\enemy_information_controller_setup.gml</script>
       <script>scripts\add_enemy_information.gml</script>
       <script>scripts\get_enemy_information.gml</script>
-      <script>scripts\initialize_battle_controller.gml</script>
-      <script>scripts\attack.gml</script>
-      <script>scripts\end_turn.gml</script>
-      <script>scripts\enemy_turn.gml</script>
-      <script>scripts\enemy_choice.gml</script>
-      <script>scripts\end_battle.gml</script>
     </scripts>
     <scripts name="effect_scripts">
       <script>scripts\effect_init.gml</script>
       <script>scripts\effect_render.gml</script>
       <script>scripts\effect_fade.gml</script>
+      <script>scripts\effect_render_text.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
+    <script>scripts\end_turn.gml</script>
+    <scripts name="battle_scripts">
+      <script>scripts\initiate_battle.gml</script>
+      <script>scripts\set_up_battle.gml</script>
+      <script>scripts\initialize_battle_controller.gml</script>
+      <scripts name="enemy_battle_scripts">
+        <script>scripts\enemy_choice.gml</script>
+        <script>scripts\enemy_turn.gml</script>
+      </scripts>
+      <scripts name="post_battle_scripts">
+        <script>scripts\player_loss.gml</script>
+        <script>scripts\end_battle.gml</script>
+        <script>scripts\player_victory.gml</script>
+        <script>scripts\get_loot.gml</script>
+      </scripts>
+      <scripts name="player_battle_scripts">
+        <script>scripts\attack.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -175,6 +209,7 @@
       <object>objects\rebind_right_obj</object>
       <object>objects\rebind_up_obj</object>
       <object>objects\rebind_down_key</object>
+      <object>objects\return_btn</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
@@ -189,6 +224,9 @@
     <objects name="effect_objs">
       <object>objects\exclamation_effect_obj</object>
       <object>objects\game_saved_effect_obj</object>
+      <object>objects\equipped_item_effect_obj</object>
+      <object>objects\draw_text_effect_obj</object>
+      <object>objects\object46</object>
     </objects>
     <objects name="player_objs">
       <object>objects\player_battle_obj</object>
@@ -199,8 +237,10 @@
       <object>objects\music_controller_obj</object>
       <object>objects\gui_controller_obj</object>
       <object>objects\battle_controller_obj</object>
+      <object>objects\item_information_controller</object>
     </objects>
     <object>objects\basic_attack_btn</object>
+    <object>objects\item_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

@@ -4,6 +4,10 @@
 PLAYER_TURN = 0;
 ENEMY_TURN = 1;
 DELAY = 50;
+previous_room = room;
+current_room = room;
+display_results = false;
+battle_over = true;
 wait = 0;
 turn = 0;
 enemy_stats = 0;
