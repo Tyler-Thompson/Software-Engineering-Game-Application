@@ -55,6 +55,10 @@
     <instance objName="music_controller_obj" x="24" y="0" name="inst_90249D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="test_obj" x="408" y="216" name="inst_D291AC3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="player_controller_obj" x="0" y="24" name="inst_85D549C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="gui_controller_obj" x="24" y="24" name="inst_DD1DFA6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="battle_controller_obj" x="48" y="0" name="inst_183C5EB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemy_information_controller" x="48" y="24" name="inst_6C6790F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="item_information_controller" x="72" y="0" name="inst_B2AB97E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
