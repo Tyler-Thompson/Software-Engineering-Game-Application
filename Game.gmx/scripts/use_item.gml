@@ -16,7 +16,7 @@ if(not is_undefined(argument0) and argument0 != "" and is_in_inventory(argument0
     if(result)
     {
       displayed_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-      displayed_text_effect.text_to_draw = "Equipped " + argument0;      
+      displayed_text_effect.text_to_draw = "Equipped " + argument0;
     }
     return result;
   }

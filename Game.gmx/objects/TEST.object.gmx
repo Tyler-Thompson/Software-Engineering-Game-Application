@@ -34,6 +34,7 @@ menu_test_init();
 gui_test_init();
 enemy_test_init();
 battle_test();
+
 </string>
           </argument>
         </arguments>
@@ -64,7 +65,7 @@ battle_test();
     is_complete = (is_complete and menu_test());
     is_complete = (is_complete and gui_test());
     is_complete = (is_complete and enemy_test());
-    
+    is_complete = (is_complete and item_test());
     if(is_complete)
     {
         //resets player controller to defaults
@@ -108,6 +109,7 @@ battle_test();
           <argument>
             <kind>1</kind>
             <string>draw_set_font(font0);
+set_test_draw();
 draw_test();
 </string>
           </argument>

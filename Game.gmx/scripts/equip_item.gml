@@ -11,7 +11,11 @@ if(is_in_inventory(argument0) and not is_equipped(argument0))
   if(item_info[0] == "armor")
   {
     //equip[0] = weapon, equip[1] = armor
-    unequip(player_controller_obj.equip[1]);
+    decrement = not unequip(player_controller_obj.equip[1]);
+    if(decrement)
+    {
+      decrement_inventory_size();
+    }
     player_controller_obj.equip[1] = argument0;
     player_controller_obj.max_defense += item_info[1];
     player_controller_obj.my_defense += item_info[1];
@@ -19,7 +23,11 @@ if(is_in_inventory(argument0) and not is_equipped(argument0))
   }
   else if(item_info[0] == "weapon")
   {
-    unequip(player_controller_obj.equip[0]);
+    decrement = not unequip(player_controller_obj.equip[0]);
+    if(decrement)
+    {
+      decrement_inventory_size();
+    }
     player_controller_obj.equip[0] = argument0;
     player_controller_obj.my_attack += item_info[1];
     to_return = true;
