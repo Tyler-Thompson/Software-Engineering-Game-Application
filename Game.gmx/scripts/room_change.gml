@@ -5,3 +5,4 @@
 */
 
 room_goto(argument0);
+check_time();

@@ -31,6 +31,10 @@
 */
 player_test_init();
 menu_test_init();
+gui_test_init();
+enemy_test_init();
+battle_test();
+
 </string>
           </argument>
         </arguments>
@@ -59,9 +63,17 @@ menu_test_init();
     //TEST LIST
     is_complete = (is_complete and player_test());
     is_complete = (is_complete and menu_test());
-    
+    is_complete = (is_complete and gui_test());
+    is_complete = (is_complete and enemy_test());
+    is_complete = (is_complete and item_test());
     if(is_complete)
     {
+        //resets player controller to defaults
+        with (player_controller_obj)
+        {
+            player_controller_init();
+        }
+    
         //tests have been completed
         test_plan = "1.."+string(test_count);
         if(fail_count==0)
@@ -97,6 +109,7 @@ menu_test_init();
           <argument>
             <kind>1</kind>
             <string>draw_set_font(font0);
+set_test_draw();
 draw_test();
 </string>
           </argument>

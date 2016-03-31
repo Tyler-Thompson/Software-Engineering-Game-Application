@@ -66,6 +66,36 @@ switch(player_test_alarm)
         it("Confirming that pressing the 'S' key causes the player to move down.", 2, player.y);
         keyboard_key_release(ord('S'));
         break;
+    case 8:
+        //shop unit tests
+        with(player)
+        {
+            x = 0;
+            y = 0;
+        }
+        sword = instance_create(0,0,buyable_ice_sword_obj);
+        previous_currency = player_controller_obj.current_gold;
+        player_controller_obj.current_gold += sword.my_cost;
+        with(sword)
+        {
+            event_perform(ev_step,ev_step_normal);
+        }
+        it("Verifying that touching a shop object will purchase it",1,player_controller_obj.current_gold = previous_currency);
+        break;
+    case 9:
+        day_end = 20;
+        day_start = 8;
+        if(current_hour < day_end && current_hour > day_start)
+        {
+            it("Confirming Correct Background is displayed", background_visible[0], true);
+            it("Confirming Incorrect Background is not displayed", background_visible[1], false);
+        }
+        else
+        {
+            it("Confirming Correct Background is displayed", background_visible[1], true);
+            it("Confirming Incorrect Background is not displayed", background_visible[0], false);
+        }
+        break;
     default:
         player_complete = true;
         with (player)
