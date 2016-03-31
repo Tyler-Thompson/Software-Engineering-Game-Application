@@ -82,6 +82,20 @@ switch(player_test_alarm)
         }
         it("Verifying that touching a shop object will purchase it",1,player_controller_obj.current_gold = previous_currency);
         break;
+    case 9:
+        day_end = 20;
+        day_start = 8;
+        if(current_hour < day_end && current_hour > day_start)
+        {
+            it("Confirming Correct Background is displayed", background_visible[0], true);
+            it("Confirming Incorrect Background is not displayed", background_visible[1], false);
+        }
+        else
+        {
+            it("Confirming Correct Background is displayed", background_visible[1], true);
+            it("Confirming Incorrect Background is not displayed", background_visible[0], false);
+        }
+        break;
     default:
         player_complete = true;
         with (player)
