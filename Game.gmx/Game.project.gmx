@@ -163,6 +163,7 @@
       <script>scripts\effect_render_text.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
+    <script>scripts\check_time.gml</script>
     <script>scripts\end_turn.gml</script>
     <scripts name="battle_scripts">
       <script>scripts\initiate_battle.gml</script>
