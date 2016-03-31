@@ -8,6 +8,8 @@
 if(room == battle_room)
 {
     get_enemy_information(enemy_name);
+    battle_controller_obj.battle_over = false;
+    battle_controller_obj.display_results = false;
     battle_controller_obj.turn = battle_controller_obj.PLAYER_TURN;
     player = instance_create(216, 120, player_battle_obj);
     enemy = instance_create(264, 120, enemy_battle_obj);

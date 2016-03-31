@@ -67,6 +67,12 @@ battle_test();
     
     if(is_complete)
     {
+        //resets player controller to defaults
+        with (player_controller_obj)
+        {
+            player_controller_init();
+        }
+    
         //tests have been completed
         test_plan = "1.."+string(test_count);
         if(fail_count==0)

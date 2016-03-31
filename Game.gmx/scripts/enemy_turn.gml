@@ -8,7 +8,7 @@ if(action == 0)
     if(battle_controller_obj.enemy_attack > player_controller_obj.my_defense)
     {
         player_controller_obj.current_hp -= (battle_controller_obj.enemy_attack - player_controller_obj.my_defense);
-        player_controller_obj.my_defense = 0;
+        player_controller_obj.my_defense = min(0, player_controller_obj.my_defense);
         if(player_controller_obj.current_hp < 0)
         {
             player_controller_obj.current_hp = 0;
@@ -18,6 +18,8 @@ if(action == 0)
     {
         player_controller_obj.my_defense -= battle_controller_obj.enemy_attack;
     }
+    draw_text_effect = instance_create(enemy_battle_obj.x, enemy_battle_obj.y - enemy_battle_obj.sprite_height/2, draw_text_effect_obj);
+    draw_text_effect.text_to_draw = battle_controller_obj.enemy_name + " attacked! " + string(battle_controller_obj.enemy_attack) + " damage dealt.";
 }
 else if(action == 1)
 {
@@ -25,4 +27,6 @@ else if(action == 1)
     {
         end_battle(2);
     }
+    draw_text_effect = instance_create(enemy_battle_obj.x, enemy_battle_obj.y - enemy_battle_obj.sprite_height/2, draw_text_effect_obj);
+    draw_text_effect.text_to_draw = battle_controller_obj.enemy_name + " tried to run, but failed.";
 }

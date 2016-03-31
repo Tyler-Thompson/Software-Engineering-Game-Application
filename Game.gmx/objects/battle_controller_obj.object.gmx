@@ -48,25 +48,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room == battle_room and turn == ENEMY_TURN)
+            <string>if(battle_over == false)
 {
-  end_turn();
-}
-if(room == battle_room and player_controller_obj.current_hp == 0)
-{
-  end_battle(1);
-}
-else if(room == battle_room and enemy_health == 0)
-{
-  end_battle(0);
-}
-if(player_controller_obj.current_hp &lt;= 0)
-{
-  with(player_controller_obj)
-  {  
-    room = menu_room;
-    player_controller_init();
-  }
+    if(room == battle_room and turn == ENEMY_TURN)
+    {
+      end_turn();
+    }
+    if(room == battle_room and player_controller_obj.current_hp == 0 )
+    {
+      player_loss();
+    }
+    else if(room == battle_room and enemy_health == 0)
+    {
+      player_victory();
+    }
+    if(player_controller_obj.current_hp &lt;= 0)
+    {
+      with(player_controller_obj)
+      {
+        room = menu_room;
+        player_controller_init();
+      }
+    }
 }
 </string>
           </argument>
@@ -90,7 +93,8 @@ if(player_controller_obj.current_hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>set_up_battle();
+            <string>change_previous_and_current_room();
+set_up_battle();
 </string>
           </argument>
         </arguments>

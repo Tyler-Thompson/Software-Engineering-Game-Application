@@ -66,6 +66,22 @@ switch(player_test_alarm)
         it("Confirming that pressing the 'S' key causes the player to move down.", 2, player.y);
         keyboard_key_release(ord('S'));
         break;
+    case 8:
+        //shop unit tests
+        with(player)
+        {
+            x = 0;
+            y = 0;
+        }
+        sword = instance_create(0,0,buyable_ice_sword_obj);
+        previous_currency = player_controller_obj.current_gold;
+        player_controller_obj.current_gold += sword.my_cost;
+        with(sword)
+        {
+            event_perform(ev_step,ev_step_normal);
+        }
+        it("Verifying that touching a shop object will purchase it",1,player_controller_obj.current_gold = previous_currency);
+        break;
     default:
         player_complete = true;
         with (player)

@@ -84,9 +84,184 @@ switch(menu_counter)
         it("ensures save game menu button exists after the game is paused",1,instance_number(save_game_btn_obj)==1);
         it("ensures exit game menu button exists after the game is paused",1,instance_number(exit_obj)==1);
         resume();
+        break;
+    case 5:
+        //Rebind keys tests
+        
+        //left key rebinding
+        instance_create(0,0,rebind_left_obj);
+        with (rebind_left_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('J');
+            event_perform(ev_step, ev_step_normal);
+        }
+        with (rebind_left_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 6:
+        instance_create(0,0,player_obj);
+        keyboard_key_press(ord('J'));
+        with (player_obj)
+        {
+            event_perform(ev_step, ev_step_normal);
+        }
+        break;
+    case 7:
+        keyboard_key_release(ord('J'));
+        break;
+    case 8:
+        it("ensures key rebinding works for LEFT key",1,player_obj.x < 0);
+        with (player_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 9:
+        //Rebind keys tests
+        
+        //right key rebinding
+        instance_create(0,0,rebind_right_obj);
+        with (rebind_right_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('L');
+            event_perform(ev_step, ev_step_normal);
+        }
+        with (rebind_right_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 10:
+        instance_create(0,0,player_obj);
+        keyboard_key_press(ord('L'));
+        with (player_obj)
+        {
+            event_perform(ev_step, ev_step_normal);
+        }
+        break;
+    case 11:
+        keyboard_key_release(ord('L'));
+        break;
+    case 12:
+        it("ensures key rebinding works for RIGHT key",1,player_obj.x > 0);
+        with (player_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 13:
+        //Rebind keys tests
+        
+        //up key rebinding
+        instance_create(0,0,rebind_up_obj);
+        with (rebind_up_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('I');
+            event_perform(ev_step, ev_step_normal);
+        }
+        with (rebind_up_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 14:
+        instance_create(0,0,player_obj);
+        keyboard_key_press(ord('I'));
+        with (player_obj)
+        {
+            event_perform(ev_step, ev_step_normal);
+        }
+        break;
+    case 15:
+        keyboard_key_release(ord('I'));
+        break;
+    case 16:
+        it("ensures key rebinding works for UP key",1,player_obj.y < 0);
+        with (player_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 17:
+        //Rebind keys tests
+        
+        //Down key rebinding
+        instance_create(0,0,rebind_down_key);
+        with (rebind_down_key)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('K');
+            event_perform(ev_step, ev_step_normal);
+        }
+        with (rebind_down_key)
+        {
+            instance_destroy();
+        }
+        break;
+    case 18:
+        instance_create(0,0,player_obj);
+        keyboard_key_press(ord('K'));
+        with (player_obj)
+        {
+            event_perform(ev_step, ev_step_normal);
+        }
+        break;
+    case 19:
+        keyboard_key_release(ord('K'));
+        break;
+    case 20:
+        it("ensures key rebinding works for DOWN key",1,player_obj.y > 0);
+        with (player_obj)
+        {
+            instance_destroy();
+        }
+        break;
+    case 21:
+        //key binding resets to default
+        //Down key rebinding
+        instance_create(0,0,rebind_down_key);
+        with (rebind_down_key)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('S');
+            event_perform(ev_step, ev_step_normal);
+            instance_destroy();
+        }
+        //Up key rebinding
+        instance_create(0,0,rebind_up_obj);
+        with (rebind_up_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('W');
+            event_perform(ev_step, ev_step_normal);
+            instance_destroy();
+        }
+        //Left key rebinding
+        instance_create(0,0,rebind_left_obj);
+        with (rebind_left_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('A');
+            event_perform(ev_step, ev_step_normal);
+            instance_destroy();
+        }
+        //Right key rebinding
+        instance_create(0,0,rebind_right_obj);
+        with (rebind_right_obj)
+        {
+            event_perform(ev_mouse, ev_left_press);
+            keyboard_lastkey = ord('D');
+            event_perform(ev_step, ev_step_normal);
+            instance_destroy();
+        }
+        
         menu_complete = true;
         break;
-        
 }
 //post-test instance clean-up
 with (menu_obj) 
