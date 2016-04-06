@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\shiny_trinkets_mp3</sound>
     <sound>sound\alert_wav</sound>
+    <sound>sound\minigame_music_mp3</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\characters_spr</sprite>
@@ -43,8 +44,11 @@
       <sprite>sprites\ice_sword_spr</sprite>
       <sprite>sprites\black_tome_spr</sprite>
       <sprite>sprites\green_tome_spr</sprite>
+      <sprite>sprites\rocks_spr</sprite>
+      <sprite>sprites\coins_spr</sprite>
     </sprites>
     <sprite>sprites\block_basic_spr</sprite>
+    <sprite>sprites\rock_dodge_paddle_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\world_bkg</background>
@@ -200,6 +204,17 @@
       <script>scripts\minigame_icon_init.gml</script>
       <script>scripts\minigame_icon_render.gml</script>
       <script>scripts\minigame_start.gml</script>
+      <script>scripts\rock_dodge_keyboard_listen.gml</script>
+      <script>scripts\instructions_init.gml</script>
+      <script>scripts\instructions_render.gml</script>
+      <script>scripts\rock_init.gml</script>
+      <script>scripts\rock_rotate.gml</script>
+      <script>scripts\rock_dodge_init.gml</script>
+      <script>scripts\rock_dodge_tick.gml</script>
+      <script>scripts\rock_move.gml</script>
+      <script>scripts\rock_render.gml</script>
+      <script>scripts\coin_reward.gml</script>
+      <script>scripts\minigame_end.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -271,7 +286,14 @@
     </objects>
     <objects name="minigame_objs">
       <object>objects\minigame_icon_parent</object>
-      <object>objects\minigame_rock_dodge_icon_obj</object>
+      <objects name="rock_dodge">
+        <object>objects\minigame_rock_dodge_icon_obj</object>
+        <object>objects\player_rock_dodge_obj</object>
+        <object>objects\rock_dodge_instructions_obj</object>
+        <object>objects\rock_obj</object>
+        <object>objects\coin_obj</object>
+        <object>objects\rock_dodge_controller_obj</object>
+      </objects>
     </objects>
     <object>objects\basic_attack_btn</object>
     <object>objects\item_obj</object>
