@@ -4,7 +4,7 @@
 * sets the enemy sprite direction properly
 */
 
-if (hspeed < 0 && image_xscale < 0) || (hspeed > 0 && image_xscale > 0)
+if (my_hspeed < 0 && image_xscale < 0) || (my_hspeed > 0 && image_xscale > 0)
 {
     image_xscale = image_xscale * -1;
 }

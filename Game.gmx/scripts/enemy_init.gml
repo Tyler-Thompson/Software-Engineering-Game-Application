@@ -12,4 +12,6 @@ image_speed = 0.1;
 my_speed = argument0;
 my_vision = argument1;
 my_name = argument2;
+my_hspeed = 0;
+my_vspeed = 0;
 

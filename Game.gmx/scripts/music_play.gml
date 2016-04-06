@@ -15,13 +15,16 @@ switch (room)
         song_index = shiny_trinkets_mp3;
         break;
     case second_room:
-        song_index = shiny_trinkets_mp3;
+        song_index = overworld_music_mp3;
         break;
     case options_room:
         song_index = shiny_trinkets_mp3;
         break;
     case rock_dodge_room:
         song_index = minigame_music_mp3;
+        break;
+    case battle_room:
+        song_index = battle_music_mp3;
         break;
     default:
         song_index = shiny_trinkets_mp3;

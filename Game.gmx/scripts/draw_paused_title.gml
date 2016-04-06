@@ -3,4 +3,4 @@
 * Draws the Game Paused title
 */
 
-draw_text(240, 60, "Game Paused");
+draw_text(view_xview[0]+240, view_yview[0]+60, "Game Paused");
