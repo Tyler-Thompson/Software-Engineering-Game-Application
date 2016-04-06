@@ -4,8 +4,8 @@
 * Circumvents collisions between enemy objects so that they do not occupy the same space.
 */
 
-if (abs(other.hspeed) == other.my_speed || abs(other.vspeed) == other.my_speed)
+if (abs(other.my_hspeed) == other.my_speed || abs(other.my_vspeed) == other.my_speed)
 {
-    hspeed = 0;
-    vspeed = 0;
+    my_hspeed = 0;
+    my_vspeed = 0;
 }
