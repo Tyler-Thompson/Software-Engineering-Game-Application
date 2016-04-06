@@ -33,6 +33,7 @@
       <sprite>sprites\purple_slime_spr</sprite>
       <sprite>sprites\empty_char_spr</sprite>
       <sprite>sprites\shopkeeper_spr</sprite>
+      <sprite>sprites\mage_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
     <sprites name="items">
@@ -40,6 +41,8 @@
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
+      <sprite>sprites\black_tome_spr</sprite>
+      <sprite>sprites\green_tome_spr</sprite>
     </sprites>
     <sprite>sprites\block_basic_spr</sprite>
   </sprites>
@@ -193,6 +196,11 @@
       <script>scripts\buyable_collision_detect.gml</script>
       <script>scripts\buyable_render.gml</script>
     </scripts>
+    <scripts name="minigames_scripts">
+      <script>scripts\minigame_icon_init.gml</script>
+      <script>scripts\minigame_icon_render.gml</script>
+      <script>scripts\minigame_start.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -257,11 +265,18 @@
       <object>objects\battle_controller_obj</object>
       <object>objects\item_information_controller</object>
     </objects>
+    <objects name="NPC_objs">
+      <object>objects\shopkeeper_obj</object>
+      <object>objects\minigame_npc_obj</object>
+    </objects>
+    <objects name="minigame_objs">
+      <object>objects\minigame_icon_parent</object>
+      <object>objects\minigame_rock_dodge_icon_obj</object>
+    </objects>
     <object>objects\basic_attack_btn</object>
     <object>objects\item_obj</object>
     <object>objects\block_parent</object>
     <object>objects\block_basic_obj</object>
-    <object>objects\shopkeeper_obj</object>
     <object>objects\buyable_parent</object>
     <object>objects\buyable_health_potion_obj</object>
     <object>objects\buyable_ice_sword_obj</object>
@@ -275,6 +290,7 @@
     <room>rooms\battle_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
+    <room>rooms\rock_dodge_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
