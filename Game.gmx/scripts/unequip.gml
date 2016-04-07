@@ -52,6 +52,5 @@ if(unequip_to_return)
 {
   draw_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
   draw_text_effect.text_to_draw = "Unequipped " + name;
-  increment_inventory_size();
 }
 return unequip_to_return;
