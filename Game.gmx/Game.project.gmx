@@ -173,6 +173,7 @@
       <script>scripts\add_enemy_information.gml</script>
       <script>scripts\get_enemy_information.gml</script>
       <script>scripts\is_boss.gml</script>
+      <script>scripts\has_ability.gml</script>
     </scripts>
     <scripts name="effect_scripts">
       <script>scripts\effect_init.gml</script>
