@@ -123,7 +123,6 @@
       <script>scripts\inventory_is_full.gml</script>
       <script>scripts\items_in_inventory.gml</script>
       <script>scripts\decrement_inventory_size.gml</script>
-      <script>scripts\increment_inventory_size.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
