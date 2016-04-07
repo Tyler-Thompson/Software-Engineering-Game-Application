@@ -6,7 +6,6 @@
  */
 if (room != rebind_room)
 {
-  show_debug_message("Rooms change called!");
   battle_controller_obj.previous_room = battle_controller_obj.current_room;
   battle_controller_obj.current_room = room;
 }
