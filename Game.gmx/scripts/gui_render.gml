@@ -73,7 +73,7 @@ if(player_controller_obj.inventory_is_displayed and room != first_room and insta
     draw_sprite(inventory_box_spr,-1,view_xview[0]+SPRITE_SIZE*gui_render_i + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - SPRITE_SIZE/2);
     draw_text(view_xview[0]+SPRITE_SIZE*gui_render_i + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - 1.25*SPRITE_SIZE, string((gui_render_i+1) % 10));
     
-    if(gui_render_i < player_controller_obj.player_inventory_size)
+    if(gui_render_i < items_in_inventory())
     {
       if(not is_undefined(player_controller_obj.player_inventory[gui_render_i]) and player_controller_obj.player_inventory[gui_render_i] != "")
       {

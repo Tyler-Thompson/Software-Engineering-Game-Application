@@ -40,6 +40,7 @@
       <sprite>sprites\goblin_spr</sprite>
       <sprite>sprites\goblin_archer_spr</sprite>
       <sprite>sprites\assassin_spr</sprite>
+      <sprite>sprites\dragon_lord_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
     <sprites name="items">
@@ -122,6 +123,7 @@
       <script>scripts\inventory_is_full.gml</script>
       <script>scripts\items_in_inventory.gml</script>
       <script>scripts\decrement_inventory_size.gml</script>
+      <script>scripts\increment_inventory_size.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -171,6 +173,7 @@
       <script>scripts\enemy_information_controller_setup.gml</script>
       <script>scripts\add_enemy_information.gml</script>
       <script>scripts\get_enemy_information.gml</script>
+      <script>scripts\is_boss.gml</script>
     </scripts>
     <scripts name="effect_scripts">
       <script>scripts\effect_init.gml</script>
@@ -273,6 +276,7 @@
       <object>objects\goblin_archer_obj</object>
       <object>objects\enemy_battle_obj</object>
       <object>objects\enemy_information_controller</object>
+      <object>objects\dragon_lord_obj</object>
     </objects>
     <objects name="effect_objs">
       <object>objects\exclamation_effect_obj</object>

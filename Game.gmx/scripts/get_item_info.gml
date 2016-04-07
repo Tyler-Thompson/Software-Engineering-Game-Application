@@ -7,7 +7,7 @@ name = argument0;
 armor_length = array_height_2d(item_information_controller.armor);
 weapon_length = array_height_2d(item_information_controller.weapon);
 potion_length = array_height_2d(item_information_controller.potion);
-
+var to_return;
 for(i = 0; i < max(armor_length, weapon_length, potion_length); ++i)
 {
   if((i < armor_length) and (item_information_controller.armor[i,0] == name))
