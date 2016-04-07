@@ -16,5 +16,5 @@ add_enemy_information('goblin_archer 1 forest 4 5 12 10 []', enemy_controller_se
 ++enemy_controller_setup_i;
 
 //bosses
-add_enemy_information('Dragon_Lord 2 forest 25 50 100 30 [boss]', enemy_controller_setup_i);
+add_enemy_information('Dragon_Lord 2 forest 25 50 100 30 [boss, firebreath]', enemy_controller_setup_i);
 ++enemy_controller_setup_i;
