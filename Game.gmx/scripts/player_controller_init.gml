@@ -1,13 +1,13 @@
 /*
 * Initializes constants for the player controller object
 */
-max_hp = 1000;
-max_power = 1000;
-max_defense = 2000;
+max_hp = 100;
+max_power = 100;
+max_defense = 20;
 my_attack = 10;
-my_defense = 2000;
 current_hp = max_hp;
 current_power = max_power;
+my_defense = max_defense;
 MAX_INVENTORY_SIZE = 8;
 inventory_is_displayed = true;
 player_inventory_size = 3;
