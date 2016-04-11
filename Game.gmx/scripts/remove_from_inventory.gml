@@ -12,6 +12,7 @@ if(not is_undefined(argument1))
   if(not is_undefined(player_controller_obj.player_inventory[argument1]) and player_controller_obj.player_inventory[argument1] == argument0)
   {
     player_controller_obj.player_inventory[argument1] = "";
+    decrement_inventory_size();
     return true;
   }
   return false;
@@ -23,6 +24,7 @@ else
       if(not is_undefined(player_controller_obj.player_inventory[remove_from_inventory_i]) and player_controller_obj.player_inventory[remove_from_inventory_i] == argument0)
       {
         player_controller_obj.player_inventory[remove_from_inventory_i] = "";
+        decrement_inventory_size();
         return true;
       }
     }

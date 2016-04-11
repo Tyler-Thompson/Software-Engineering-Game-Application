@@ -73,21 +73,24 @@ if(player_controller_obj.inventory_is_displayed and room != first_room and insta
     draw_sprite(inventory_box_spr,-1,view_xview[0]+SPRITE_SIZE*gui_render_i + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - SPRITE_SIZE/2);
     draw_text(view_xview[0]+SPRITE_SIZE*gui_render_i + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - 1.25*SPRITE_SIZE, string((gui_render_i+1) % 10));
     
-    if(gui_render_i < items_in_inventory())
-    {
-      if(not is_undefined(player_controller_obj.player_inventory[gui_render_i]) and player_controller_obj.player_inventory[gui_render_i] != "")
+       if(not is_undefined(player_controller_obj.player_inventory[gui_render_i]) and player_controller_obj.player_inventory[gui_render_i] != "")
       {
         draw_sprite(get_item_sprite(player_controller_obj.player_inventory[gui_render_i]),-1,view_xview[0]+SPRITE_SIZE*gui_render_i + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - SPRITE_SIZE/2);
       }
-    }
+ 
   }
+  var inventory_items_counted = 0;
   for(gui_render_i = 0; gui_render_i < 2; ++gui_render_i)
   {
     draw_sprite(inventory_box_spr,-1,view_xview[0]+SPRITE_SIZE*(gui_render_i+11) + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - SPRITE_SIZE/2);
     draw_text(view_xview[0]+SPRITE_SIZE*(gui_render_i+11) + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - 1.25*SPRITE_SIZE, string((gui_render_i+9) % 10));
+    if(inventory_items_counted <= items_in_inventory())
+    {
       if(not is_undefined(player_controller_obj.equip[gui_render_i]) and player_controller_obj.equip[gui_render_i] != "")
       {
+        inventory_items_counted += 1;
         draw_sprite(get_item_sprite(player_controller_obj.equip[gui_render_i]),-1,view_xview[0]+SPRITE_SIZE*(gui_render_i+11) + SPRITE_SIZE/2, view_yview[0]+view_hview[0] - SPRITE_SIZE/2);
       }
+    }
   }
 }
