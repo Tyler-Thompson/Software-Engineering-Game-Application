@@ -52,11 +52,14 @@
   </views>
   <instances>
     <instance objName="player_obj" x="240" y="192" name="inst_1A732B69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="continue_obj" x="240" y="72" name="inst_92B78134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="continue_obj" x="240" y="120" name="inst_92B78134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="priestess_btn_obj" x="384" y="24" name="inst_166DC53C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="paladin_btn_obj" x="240" y="24" name="inst_DF69CEDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wizard_btn_obj" x="96" y="24" name="inst_FC1E7E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="start_obj" x="480" y="288" name="inst_7056E4B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="white_paladin_btn_obj" x="240" y="72" name="inst_0C1333A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="white_wizzard_btn_obj" x="96" y="72" name="inst_64E362B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="white_priestess_btn_obj" x="384" y="72" name="inst_E8B0D6F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
