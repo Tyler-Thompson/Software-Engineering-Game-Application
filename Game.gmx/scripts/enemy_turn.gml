@@ -60,7 +60,7 @@ else if(action == 1)
       {
         var damage_dealt = 2*battle_controller_obj.enemy_attack;
         damage_player(damage_dealt);
-        if(player_battle_obj.sprite_index != priestess_spr or irandom(1) == 0)
+        if((player_battle_obj.sprite_index != priestess_spr and player_battle_obj.sprite_index != white_priestess_spr) or irandom(1) == 0)
         {
           player_controller_obj.my_attack -= 1;
           draw_text_effect = instance_create(enemy_battle_obj.x, enemy_battle_obj.y - enemy_battle_obj.sprite_height/2, draw_text_effect_obj);
