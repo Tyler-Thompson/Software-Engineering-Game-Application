@@ -44,6 +44,7 @@
       <sprite>sprites\goblin_archer_spr</sprite>
       <sprite>sprites\assassin_spr</sprite>
       <sprite>sprites\dragon_lord_spr</sprite>
+      <sprite>sprites\grim_reaper_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
     <sprites name="items">
@@ -59,6 +60,8 @@
       <sprite>sprites\coins_spr</sprite>
       <sprite>sprites\flame_blade_spr</sprite>
       <sprite>sprites\diamond_armor_spr</sprite>
+      <sprite>sprites\armor_pot_spr</sprite>
+      <sprite>sprites\elixir_of_youth_spr</sprite>
     </sprites>
     <sprite>sprites\block_basic_spr</sprite>
     <sprite>sprites\rock_dodge_paddle_spr</sprite>
@@ -128,6 +131,8 @@
       <script>scripts\items_in_inventory.gml</script>
       <script>scripts\decrement_inventory_size.gml</script>
       <script>scripts\custom_character.gml</script>
+      <script>scripts\get_player_initial_attack.gml</script>
+      <script>scripts\get_player_base_attack.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -196,6 +201,7 @@
       <scripts name="enemy_battle_scripts">
         <script>scripts\enemy_choice.gml</script>
         <script>scripts\enemy_turn.gml</script>
+        <script>scripts\damage_player.gml</script>
       </scripts>
       <scripts name="post_battle_scripts">
         <script>scripts\player_loss.gml</script>
@@ -285,6 +291,7 @@
       <object>objects\enemy_battle_obj</object>
       <object>objects\enemy_information_controller</object>
       <object>objects\dragon_lord_obj</object>
+      <object>objects\grim_reaper_obj</object>
     </objects>
     <objects name="effect_objs">
       <object>objects\exclamation_effect_obj</object>
@@ -332,6 +339,8 @@
     <object>objects\buyable_diamond_armor_obj</object>
     <object>objects\buyable_super_health_pot_obj</object>
     <object>objects\buyable_white_health_pot_obj</object>
+    <object>objects\buyable_armor_potion_obj</object>
+    <object>objects\buyable_elixir_of_youth_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

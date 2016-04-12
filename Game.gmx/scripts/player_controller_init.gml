@@ -1,10 +1,11 @@
 /*
 * Initializes constants for the player controller object
 */
+INITIAL_ATTACK = 10;
 max_hp = 100;
 max_power = 100;
 max_defense = 20;
-my_attack = 10;
+my_attack = INITIAL_ATTACK;
 current_hp = max_hp;
 current_power = max_power;
 my_defense = max_defense;
@@ -20,7 +21,7 @@ for(i = 3; i < MAX_INVENTORY_SIZE; ++i)
 {
   player_inventory[i] = "";
 }
-current_gold = 10;
+current_gold = 1000;
 sprite_num = 0;
 sprite_x_scale = 1;
 sprite_y_scale = 1;

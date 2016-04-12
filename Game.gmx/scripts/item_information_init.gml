@@ -42,6 +42,24 @@ potion[1,2] = 100;
 //sprite
 potion[1,3] = super_health_pot_spr;
 
+//name
+potion[2,0] = "basic armor potion";
+//type
+potion[2,1] = "armor";
+//added health
+potion[2,2] = 20;
+//sprite
+potion[2,3] = armor_pot_spr;
+
+//name
+potion[3,0] = "elixir of youth";
+//type
+potion[3,1] = "set_attack";
+//added health
+potion[3,2] = get_player_initial_attack();
+//sprite
+potion[3,3] = elixir_of_youth_spr;
+
 /******************************
 * WEAPONS
 ******************************/
