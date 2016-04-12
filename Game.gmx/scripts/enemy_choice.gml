@@ -2,7 +2,7 @@
 * enemy_choice()
 * returns the action that the enemy decides to use this turn
 */
-if(string_pos("boss",battle_controller_obj.enemy_abilities))
+if(is_boss())
 {
  return irandom(1);
 }
