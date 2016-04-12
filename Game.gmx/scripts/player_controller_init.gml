@@ -28,9 +28,15 @@ sprite_y_scale = 1;
 spr_name[0] = paladin_spr;
 spr_name[1] = wizard_spr;
 spr_name[2] = priestess_spr;
+spr_name[3] = white_paladin_spr;
+spr_name[4] = white_wizard_spr;
+spr_name[5] = white_priestess_spr;
 sprite_visible_name[0] = "Paladin";
 sprite_visible_name[1] = "Wizard";
 sprite_visible_name[2] = "Priestess";
+sprite_visible_name[3] = "White Paladin";
+sprite_visible_name[4] = "White Wizard";
+sprite_visible_name[5] = "White Priestess";
 
 //player control key-bindings
 left_key = ord('A');

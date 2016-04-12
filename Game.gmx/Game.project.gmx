@@ -30,8 +30,11 @@
     </sprites>
     <sprites name="characters">
       <sprite>sprites\priestess_spr</sprite>
+      <sprite>sprites\white_priestess_spr</sprite>
       <sprite>sprites\wizard_spr</sprite>
+      <sprite>sprites\white_wizard_spr</sprite>
       <sprite>sprites\paladin_spr</sprite>
+      <sprite>sprites\white_paladin_spr</sprite>
       <sprite>sprites\skeleton_spr</sprite>
       <sprite>sprites\purple_slime_spr</sprite>
       <sprite>sprites\empty_char_spr</sprite>
@@ -47,6 +50,7 @@
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
       <sprite>sprites\super_health_pot_spr</sprite>
+      <sprite>sprites\white_health_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
@@ -126,6 +130,7 @@
       <script>scripts\inventory_is_full.gml</script>
       <script>scripts\items_in_inventory.gml</script>
       <script>scripts\decrement_inventory_size.gml</script>
+      <script>scripts\custom_character.gml</script>
       <script>scripts\get_player_initial_attack.gml</script>
       <script>scripts\get_player_base_attack.gml</script>
     </scripts>
@@ -257,8 +262,11 @@
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
       <object>objects\wizard_btn_obj</object>
+      <object>objects\white_wizzard_btn_obj</object>
       <object>objects\paladin_btn_obj</object>
+      <object>objects\white_paladin_btn_obj</object>
       <object>objects\priestess_btn_obj</object>
+      <object>objects\white_priestess_btn_obj</object>
       <object>objects\save_game_btn_obj</object>
       <object>objects\cheat_code_textbox_obj</object>
       <object>objects\submit_cheat_code_obj</object>
@@ -276,8 +284,8 @@
     </objects>
     <objects name="enemy_objs">
       <object>objects\enemy_parent_obj</object>
-      <object>objects\purple_slime_obj</object>
       <object>objects\skeleton_obj</object>
+      <object>objects\purple_slime_obj</object>
       <object>objects\goblin_warrior_obj</object>
       <object>objects\goblin_archer_obj</object>
       <object>objects\enemy_battle_obj</object>
@@ -330,6 +338,7 @@
     <object>objects\buyable_flame_blade_obj</object>
     <object>objects\buyable_diamond_armor_obj</object>
     <object>objects\buyable_super_health_pot_obj</object>
+    <object>objects\buyable_white_health_pot_obj</object>
     <object>objects\buyable_armor_potion_obj</object>
     <object>objects\buyable_elixir_of_youth_obj</object>
   </objects>
