@@ -1,0 +1,3 @@
+change_player_sprite(white_wizard_spr);
+change_player_sprite(white_priestess_spr);
+change_player_sprite(white_paladin_spr);
