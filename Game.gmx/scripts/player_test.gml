@@ -112,6 +112,17 @@ switch(player_test_alarm)
             instance_destroy();
         }
         break;
+    case 12:
+        simulate_level_one();
+        it("Ensures the first level contains a player by simulating it",instance_number(player_obj)!=0, true);
+        it("Ensures the first level contains an item by simulating it",instance_number(buyable_health_potion_obj)!=0,true);
+        it("Ensures the first level contains an item shop NPC by simulating it",instance_number(shopkeeper_obj)!=0,true);
+        it("Ensures the first level contains a mini-game by simulating it",instance_number(minigame_rock_dodge_icon_obj)!=0,true);
+        it("Ensures the first level contains a mini-game NPC by simulating it",instance_number(minigame_npc_obj)!=0,true);
+        it("Ensures the first level contains an enemy by simulating it",instance_number(test_enemy_obj)!=0,true);
+        it("Ensures the first level contains a boss by simulating it",instance_number(dragon_lord_obj)!=0,true);
+        cleanup_level_one();
+        break;
     default:
         player_complete = true;
         with (player)
