@@ -7,11 +7,15 @@
 * @argument1: vision, the distance (in pixels) which the enemy can detect the player from.
 */
 
-image_speed = 0.1;
+START_SPEED_X = 0;
+START_SPEED_Y = 0;
+START_IMAGE_SPEED = 0.1;
+
+image_speed = START_IMAGE_SPEED;
 
 my_speed = argument0;
 my_vision = argument1;
 my_name = argument2;
-my_hspeed = 0;
-my_vspeed = 0;
+my_hspeed = START_SPEED_X;
+my_vspeed = START_SPEED_Y;
 

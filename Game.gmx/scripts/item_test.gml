@@ -51,6 +51,6 @@ equip_item(item_information_controller.weapon[0,0],0);
 equip_item(item_information_controller.armor[0,0],2);
 it("UT11: Confirming that equipping a weapon correctly modifies the attack stat.", t_attack + item_information_controller.weapon[0,1], player_controller_obj.my_attack);
 it("UT11: Confirming that equipping armor correctly modifies the defense stat.", t_defense + item_information_controller.armor[0,1], player_controller_obj.my_defense);
-it("UT11: Confirming that equipped items are removed from the inventory.", player_controller_obj.MAX_INVENTORY_SIZE - 2, items_in_inventory());
+it("UT11: Confirming that equipped items are removed from the inventory.", player_controller_obj.MAX_INVENTORY_SIZE, items_in_inventory());
 set_test_draw();
 return true;
