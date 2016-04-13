@@ -278,6 +278,7 @@
       <object>objects\rebind_up_obj</object>
       <object>objects\rebind_down_key</object>
       <object>objects\return_btn</object>
+      <object>objects\basic_attack_btn</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
@@ -298,7 +299,6 @@
       <object>objects\game_saved_effect_obj</object>
       <object>objects\equipped_item_effect_obj</object>
       <object>objects\draw_text_effect_obj</object>
-      <object>objects\object46</object>
     </objects>
     <objects name="player_objs">
       <object>objects\player_battle_obj</object>
@@ -327,20 +327,23 @@
         <object>objects\rock_dodge_controller_obj</object>
       </objects>
     </objects>
-    <object>objects\basic_attack_btn</object>
-    <object>objects\item_obj</object>
-    <object>objects\block_parent</object>
-    <object>objects\block_basic_obj</object>
-    <object>objects\water_obj</object>
-    <object>objects\buyable_parent</object>
-    <object>objects\buyable_health_potion_obj</object>
-    <object>objects\buyable_ice_sword_obj</object>
-    <object>objects\buyable_flame_blade_obj</object>
-    <object>objects\buyable_diamond_armor_obj</object>
-    <object>objects\buyable_super_health_pot_obj</object>
-    <object>objects\buyable_white_health_pot_obj</object>
-    <object>objects\buyable_armor_potion_obj</object>
-    <object>objects\buyable_elixir_of_youth_obj</object>
+    <objects name="buyable_objs">
+      <object>objects\buyable_parent</object>
+      <object>objects\item_obj</object>
+      <object>objects\buyable_health_potion_obj</object>
+      <object>objects\buyable_ice_sword_obj</object>
+      <object>objects\buyable_flame_blade_obj</object>
+      <object>objects\buyable_white_health_pot_obj</object>
+      <object>objects\buyable_armor_potion_obj</object>
+      <object>objects\buyable_elixir_of_youth_obj</object>
+      <object>objects\buyable_diamond_armor_obj</object>
+      <object>objects\buyable_super_health_pot_obj</object>
+    </objects>
+    <objects name="world_objs">
+      <object>objects\block_basic_obj</object>
+      <object>objects\block_parent</object>
+      <object>objects\water_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>
