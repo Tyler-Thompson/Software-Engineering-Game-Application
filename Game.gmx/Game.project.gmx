@@ -95,6 +95,8 @@
       <script>scripts\gui_test_init.gml</script>
       <script>scripts\battle_test.gml</script>
       <script>scripts\item_test.gml</script>
+      <script>scripts\simulate_level_one.gml</script>
+      <script>scripts\cleanup_level_one.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -285,6 +287,7 @@
     </objects>
     <objects name="enemy_objs">
       <object>objects\enemy_parent_obj</object>
+      <object>objects\test_enemy_obj</object>
       <object>objects\skeleton_obj</object>
       <object>objects\purple_slime_obj</object>
       <object>objects\goblin_warrior_obj</object>
