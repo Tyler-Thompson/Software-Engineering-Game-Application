@@ -10,6 +10,8 @@ VIEW_HEIGHT = view_hview[0];
 if (room == second_room || room == battle_room || room == testing_room)
 {
     instance_deactivate_all(true);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
     
     instance_create(view_xview[0]+VIEW_WIDTH/2, view_yview[0]+VIEW_HEIGHT/4, paused_title_obj);
     instance_create(view_xview[0]+VIEW_WIDTH/5, view_yview[0]+VIEW_HEIGHT/2.5, continue_game_obj);
