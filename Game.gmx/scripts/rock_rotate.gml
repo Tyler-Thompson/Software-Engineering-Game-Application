@@ -6,7 +6,9 @@
 
 direction += rotation_velocity;
 
-if (direction > 360) 
+MAX_ROTATION = 360;
+
+if (direction > MAX_ROTATION) 
 { 
-    direction = direction mod 360; 
+    direction = direction mod MAX_ROTATION; 
 }

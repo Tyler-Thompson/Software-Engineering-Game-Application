@@ -19,4 +19,4 @@ else
 
 //resets alarm
 FRAMES_PER_SECOND = room_speed;
-alarm[0] = room_speed / 6;
+alarm[0] = FRAMES_PER_SECOND / 6;

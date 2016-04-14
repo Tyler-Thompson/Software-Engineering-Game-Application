@@ -4,6 +4,8 @@
 * Moves the enemy towards the player object.
 */
 
+NO_MOVE_SPEED = 0;
+
 if (place_meeting(x,y,enemy_parent_obj))
 {
     inst = instance_place(x,y,enemy_parent_obj)
@@ -11,16 +13,17 @@ if (place_meeting(x,y,enemy_parent_obj))
     inst_vspeed = abs(inst.my_vspeed);
     
     //collision between enemies detected; abort script
-    if (inst.my_hspeed > 0 || inst.my_vspeed > 0)
+    if (inst.my_hspeed > NO_MOVE_SPEED || inst.my_vspeed > NO_MOVE_SPEED)
     {
         exit;
     }
 }
 
-if (abs(my_hspeed) < my_speed && abs(my_vspeed) < my_speed && (my_vspeed != 0 || my_hspeed != 0))
+if (abs(my_hspeed) < my_speed && abs(my_vspeed) < my_speed && (my_vspeed != NO_MOVE_SPEED || my_hspeed != NO_MOVE_SPEED))
 {
     //initial detection; make effect
-    instance_create(x,y-24,exclamation_effect_obj);
+    OFFSET_Y = 24;
+    instance_create(x,y-OFFSET_Y,exclamation_effect_obj);
 }
 
 //set horizontal motion
@@ -37,7 +40,7 @@ else if (player_obj.x < x)
 else
 {
     //player is at same x as enemy
-    my_hspeed = 0;
+    my_hspeed = NO_MOVE_SPEED;
 }
 
 //set vertical motion
@@ -54,7 +57,7 @@ else if (player_obj.y < y)
 else
 {
     //player is at same y as enemy
-    my_vspeed = 0;
+    my_vspeed = NO_MOVE_SPEED;
 }
 
 //these if statements account for very small differences in x and y between enemy and player
