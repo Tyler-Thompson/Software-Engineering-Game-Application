@@ -348,11 +348,10 @@
     <instance objName="block_basic_obj" x="492" y="372" name="inst_CC2C5354" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="block_basic_obj" x="756" y="228" name="inst_FCD838EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="shady_merchant_obj" x="516" y="372" name="inst_D030255E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_flame_blade_obj" x="576" y="408" name="inst_D5A98F20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_flame_blade_obj" x="576" y="432" name="inst_D5A98F20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_health_potion_obj" x="576" y="336" name="inst_48F1E55D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goblin_warrior_obj" x="924" y="228" name="inst_C828DF18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goblin_warrior_obj" x="300" y="324" name="inst_86DDDEE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_health_potion_obj" x="456" y="336" name="inst_C38AB4CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="block_basic_obj" x="324" y="444" name="inst_FA79A175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="block_basic_obj" x="324" y="420" name="inst_0116F327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="block_basic_obj" x="324" y="396" name="inst_E60FB9AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -412,13 +411,11 @@
     <instance objName="block_basic_obj" x="228" y="612" name="inst_8D1B5E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_super_health_pot_obj" x="264" y="588" name="inst_7FE80C9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="dragon_lord_obj" x="96" y="504" name="inst_2558117A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_diamond_armor_obj" x="456" y="408" name="inst_886B8B9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_diamond_armor_obj" x="432" y="432" name="inst_886B8B9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="grim_reaper_obj" x="624" y="552" name="inst_14536A71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_elixir_of_youth_obj" x="528" y="432" name="inst_2811FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_armor_potion_obj" x="480" y="432" name="inst_FA0350F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_armor_potion_obj" x="528" y="336" name="inst_A713F12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_health_potion_obj" x="456" y="384" name="inst_044FB301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="buyable_health_potion_obj" x="576" y="384" name="inst_61CDBE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_elixir_of_youth_obj" x="504" y="432" name="inst_2811FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_armor_potion_obj" x="432" y="336" name="inst_A713F12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_white_pot_obj" x="576" y="384" name="inst_6D44B9EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="world_bkg" x="264" y="0" w="24" h="24" xo="120" yo="744" id="10000183" name="inst_B662895A" depth="10000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

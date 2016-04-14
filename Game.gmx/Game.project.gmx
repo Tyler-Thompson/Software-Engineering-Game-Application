@@ -50,7 +50,7 @@
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
       <sprite>sprites\super_health_pot_spr</sprite>
-      <sprite>sprites\white_health_pot_spr</sprite>
+      <sprite>sprites\white_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
@@ -262,11 +262,8 @@
       <object>objects\continue_obj</object>
       <object>objects\character_choice_obj</object>
       <object>objects\wizard_btn_obj</object>
-      <object>objects\white_wizzard_btn_obj</object>
       <object>objects\paladin_btn_obj</object>
-      <object>objects\white_paladin_btn_obj</object>
       <object>objects\priestess_btn_obj</object>
-      <object>objects\white_priestess_btn_obj</object>
       <object>objects\save_game_btn_obj</object>
       <object>objects\cheat_code_textbox_obj</object>
       <object>objects\submit_cheat_code_obj</object>
@@ -338,7 +335,7 @@
     <object>objects\buyable_flame_blade_obj</object>
     <object>objects\buyable_diamond_armor_obj</object>
     <object>objects\buyable_super_health_pot_obj</object>
-    <object>objects\buyable_white_health_pot_obj</object>
+    <object>objects\buyable_white_pot_obj</object>
     <object>objects\buyable_armor_potion_obj</object>
     <object>objects\buyable_elixir_of_youth_obj</object>
   </objects>
