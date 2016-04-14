@@ -21,8 +21,10 @@ if(unequip_item_info[0] == "weapon" and name == player_controller_obj.equip[0])
   }
   if(not unequip_to_return)
   {
-    draw_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-    draw_text_effect.text_to_draw = "Not enough room in inventory";
+      if (instance_number(draw_text_effect_obj) == 0)
+      {
+        draw_text_over_object("Not enough room in inventory",player_obj)
+      }
     return unequip_to_return;
   }
   player_controller_obj.my_attack -= unequip_item_info[1];
@@ -40,8 +42,10 @@ else if(unequip_item_info[0] == "armor" and name == player_controller_obj.equip[
   }
   if(not unequip_to_return)
   {
-    draw_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-    draw_text_effect.text_to_draw = "Not enough room in inventory"; 
+      if (instance_number(draw_text_effect_obj) == 0)
+      {
+        draw_text_over_object("Not enough room in inventory",player_obj)
+      } 
     return unequip_to_return;
   }
   player_controller_obj.max_defense -= unequip_item_info[1];
@@ -50,7 +54,9 @@ else if(unequip_item_info[0] == "armor" and name == player_controller_obj.equip[
 }
 if(unequip_to_return)
 {
-  draw_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-  draw_text_effect.text_to_draw = "Unequipped " + name;
+  if (instance_number(draw_text_effect_obj) == 0)
+  {
+    draw_text_over_object("Unequipped " + name,player_obj)
+  }  
 }
 return unequip_to_return;
