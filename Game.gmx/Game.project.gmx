@@ -50,7 +50,7 @@
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
       <sprite>sprites\super_health_pot_spr</sprite>
-      <sprite>sprites\white_pot_spr</sprite>
+      <sprite>sprites\white_health_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
@@ -95,6 +95,8 @@
       <script>scripts\gui_test_init.gml</script>
       <script>scripts\battle_test.gml</script>
       <script>scripts\item_test.gml</script>
+      <script>scripts\simulate_level_one.gml</script>
+      <script>scripts\cleanup_level_one.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -275,12 +277,14 @@
       <object>objects\rebind_up_obj</object>
       <object>objects\rebind_down_key</object>
       <object>objects\return_btn</object>
+      <object>objects\basic_attack_btn</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
     </objects>
     <objects name="enemy_objs">
       <object>objects\enemy_parent_obj</object>
+      <object>objects\test_enemy_obj</object>
       <object>objects\skeleton_obj</object>
       <object>objects\purple_slime_obj</object>
       <object>objects\goblin_warrior_obj</object>
@@ -295,7 +299,6 @@
       <object>objects\game_saved_effect_obj</object>
       <object>objects\equipped_item_effect_obj</object>
       <object>objects\draw_text_effect_obj</object>
-      <object>objects\object46</object>
     </objects>
     <objects name="player_objs">
       <object>objects\player_battle_obj</object>
@@ -324,20 +327,23 @@
         <object>objects\rock_dodge_controller_obj</object>
       </objects>
     </objects>
-    <object>objects\basic_attack_btn</object>
-    <object>objects\item_obj</object>
-    <object>objects\block_parent</object>
-    <object>objects\block_basic_obj</object>
-    <object>objects\water_obj</object>
-    <object>objects\buyable_parent</object>
-    <object>objects\buyable_health_potion_obj</object>
-    <object>objects\buyable_ice_sword_obj</object>
-    <object>objects\buyable_flame_blade_obj</object>
-    <object>objects\buyable_diamond_armor_obj</object>
-    <object>objects\buyable_super_health_pot_obj</object>
-    <object>objects\buyable_white_pot_obj</object>
-    <object>objects\buyable_armor_potion_obj</object>
-    <object>objects\buyable_elixir_of_youth_obj</object>
+    <objects name="buyable_objs">
+      <object>objects\buyable_parent</object>
+      <object>objects\item_obj</object>
+      <object>objects\buyable_health_potion_obj</object>
+      <object>objects\buyable_ice_sword_obj</object>
+      <object>objects\buyable_flame_blade_obj</object>
+      <object>objects\buyable_white_pot_obj</object>
+      <object>objects\buyable_armor_potion_obj</object>
+      <object>objects\buyable_elixir_of_youth_obj</object>
+      <object>objects\buyable_diamond_armor_obj</object>
+      <object>objects\buyable_super_health_pot_obj</object>
+    </objects>
+    <objects name="world_objs">
+      <object>objects\block_basic_obj</object>
+      <object>objects\block_parent</object>
+      <object>objects\water_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

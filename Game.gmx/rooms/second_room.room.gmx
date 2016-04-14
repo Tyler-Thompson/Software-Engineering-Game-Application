@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="player_obj" x="72" y="264" name="inst_6439F547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="player_obj" x="48" y="276" name="inst_6439F547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="skeleton_obj" x="924" y="324" name="inst_B84C156B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="skeleton_obj" x="732" y="372" name="inst_87A940BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="purple_slime_obj" x="780" y="540" name="inst_E23024C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -411,11 +411,21 @@
     <instance objName="block_basic_obj" x="228" y="612" name="inst_8D1B5E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_super_health_pot_obj" x="264" y="588" name="inst_7FE80C9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="dragon_lord_obj" x="96" y="504" name="inst_2558117A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="buyable_diamond_armor_obj" x="432" y="432" name="inst_886B8B9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="grim_reaper_obj" x="624" y="552" name="inst_14536A71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_elixir_of_youth_obj" x="504" y="432" name="inst_2811FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_armor_potion_obj" x="432" y="336" name="inst_A713F12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="buyable_white_pot_obj" x="576" y="384" name="inst_6D44B9EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="buyable_diamond_armor_obj" x="408" y="408" name="inst_886B8B9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grim_reaper_obj" x="624" y="552" name="inst_14536A71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_elixir_of_youth_obj" x="528" y="456" name="inst_2811FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_armor_potion_obj" x="456" y="432" name="inst_FA0350F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_armor_potion_obj" x="528" y="336" name="inst_A713F12A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_health_potion_obj" x="456" y="384" name="inst_044FB301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="buyable_health_potion_obj" x="576" y="384" name="inst_61CDBE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> develop
   </instances>
   <tiles>
     <tile bgName="world_bkg" x="264" y="0" w="24" h="24" xo="120" yo="744" id="10000183" name="inst_B662895A" depth="10000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

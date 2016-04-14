@@ -21,7 +21,7 @@ for(i = 3; i < MAX_INVENTORY_SIZE; ++i)
 {
   player_inventory[i] = "";
 }
-current_gold = 1000;
+current_gold = 10;
 sprite_num = 0;
 sprite_x_scale = 1;
 sprite_y_scale = 1;
