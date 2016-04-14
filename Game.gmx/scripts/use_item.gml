@@ -15,8 +15,11 @@ if(not is_undefined(argument0) and argument0 != "" and is_in_inventory(argument0
     result = equip_item(argument0, argument1);
     if(result)
     {
-      displayed_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-      displayed_text_effect.text_to_draw = "Equipped " + argument0;
+      if (instance_number(draw_text_effect_obj) == 0)
+      {
+        draw_text_over_object("Equipped " + argument0,player_obj)
+      }
+      test_attack = player_controller_obj.my_attack;
     }
     return result;
   }
@@ -26,18 +29,57 @@ if(not is_undefined(argument0) and argument0 != "" and is_in_inventory(argument0
     {
       if(player_controller_obj.current_hp = player_controller_obj.max_hp)
       {
-        displayed_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-        displayed_text_effect.text_to_draw = "Already at max health";
+       
+        if (instance_number(draw_text_effect_obj) == 0)
+        {
+          draw_text_over_object("Already at max health",player_obj)
+        }
         return false;
       }
       player_controller_obj.current_hp += item[2];
-      if(player_controller_obj.current_hp > player_controller_obj.max_hp)
+      player_controller_obj.current_hp = min(player_controller_obj.current_hp, player_controller_obj.max_hp);
+    }
+    else if(item[1] == "set_attack")
+    {
+      if(get_player_base_attack() < item[2])
       {
-        player_controller_obj.current_hp = player_controller_obj.max_hp;
+        player_controller_obj.my_attack = player_controller_obj.my_attack - get_player_base_attack() + item[2];
+      }
+      else
+      {
+        if (instance_number(draw_text_effect_obj) == 0)
+        {
+          draw_text_over_object("You are already brimming with youth!",player_obj)
+        }
+        return false;
+      }
+    }
+    else if(item[1] == "color change")
+    {
+        if(item[2] == "white")
+        {
+            custom_character();
+        }
+    }
+    else if(item[1] == "armor")
+    {
+      if(player_controller_obj.my_defense < player_controller_obj.max_defense)
+      {
+        player_controller_obj.my_defense = min(player_controller_obj.max_defense, player_controller_obj.my_defense + item[2]);
+      }
+      else
+      {
+        if (instance_number(draw_text_effect_obj) == 0)
+        {
+          draw_text_over_object("Your armor is already spotless!",player_obj)
+        }
+        return false;
       }
     }
     remove_from_inventory(argument0, argument1);
-    displayed_text_effect = instance_create(player_obj.x, player_obj.y - player_obj.sprite_height/2, draw_text_effect_obj);
-    displayed_text_effect.text_to_draw = "Used a " + argument0;
+    if (instance_number(draw_text_effect_obj) == 0)
+    {
+      draw_text_over_object("Used a " + argument0,player_obj)
+    }
   }
 }

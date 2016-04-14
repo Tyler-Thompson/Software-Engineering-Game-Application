@@ -17,13 +17,16 @@ if(not is_undefined(argument1))
   }
   return false;
 }
-for(remove_from_inventory_i = 0; remove_from_inventory_i < player_controller_obj.player_inventory_size; ++remove_from_inventory_i)
+else
 {
-  if(not is_undefined(player_controller_obj.player_inventory[remove_from_inventory_i]) and player_controller_obj.player_inventory[remove_from_inventory_i] == argument0)
-  {
-    player_controller_obj.player_inventory[remove_from_inventory_i] = "";
-    decrement_inventory_size();
-    return true;
-  }
+    for(remove_from_inventory_i = 0; remove_from_inventory_i < player_controller_obj.player_inventory_size; ++remove_from_inventory_i)
+    {
+      if(not is_undefined(player_controller_obj.player_inventory[remove_from_inventory_i]) and player_controller_obj.player_inventory[remove_from_inventory_i] == argument0)
+      {
+        player_controller_obj.player_inventory[remove_from_inventory_i] = "";
+        decrement_inventory_size();
+        return true;
+      }
+    }
+    return false;
 }
-return false;

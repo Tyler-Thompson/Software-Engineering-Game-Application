@@ -3,30 +3,32 @@
 */
 action = enemy_choice();
 
-if(action == 0)
+//if a 0 is returned, that indicates that the creature must make a normal attack
+//if a 1 or a 0 is returned, but the enemy has no power left, they must make a normal attack regardless
+if(action == 0 or (is_boss() and battle_controller_obj.enemy_power = 0))
 {
-    if(battle_controller_obj.enemy_attack > player_controller_obj.my_defense)
-    {
-        player_controller_obj.current_hp -= (battle_controller_obj.enemy_attack - player_controller_obj.my_defense);
-        player_controller_obj.my_defense = min(0, player_controller_obj.my_defense);
-        if(player_controller_obj.current_hp < 0)
-        {
-            player_controller_obj.current_hp = 0;
-        }
-    }
-    else
-    {
-        player_controller_obj.my_defense -= battle_controller_obj.enemy_attack;
-    }
-    draw_text_effect = instance_create(enemy_battle_obj.x, enemy_battle_obj.y - enemy_battle_obj.sprite_height/2, draw_text_effect_obj);
-    draw_text_effect.text_to_draw = battle_controller_obj.enemy_name + " attacked! " + string(battle_controller_obj.enemy_attack) + " damage dealt.";
+  basic_attack();
 }
 else if(action == 1)
 {
-    if(irandom(5) >= 4)
+    //if a 1 has been recieved, then the creature makes its alternative choice to the normal attack
+    //if there is no second option, then they do nothing instead
+    //currently, only bosses have special abilities that can be used here
+    if(is_boss())
     {
-        end_battle(2);
+      //checks if the boss has the firebreath ability and uses it if so
+      if(has_ability("firebreath"))
+      {
+        firebreath();
+      }
+      //checks if the boss has the touchofdeath ability and uses it if so
+      else if(has_ability("touchofdeath"))
+      {
+        touchofdeath();
+      }
     }
-    draw_text_effect = instance_create(enemy_battle_obj.x, enemy_battle_obj.y - enemy_battle_obj.sprite_height/2, draw_text_effect_obj);
-    draw_text_effect.text_to_draw = battle_controller_obj.enemy_name + " tried to run, but failed.";
+    else
+    {
+      do_nothing();
+    }
 }

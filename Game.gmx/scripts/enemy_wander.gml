@@ -6,11 +6,15 @@
 
 wander_speed = my_speed/4;
 
-if (hspeed == 0 && vspeed == 0) || (hspeed == my_speed || vspeed == my_speed)
+NO_MOVE_SPEED = 0;
+ROOM_BOUNDARY_X = 0;
+ROOM_BOUNDARY_Y = 0;
+
+if (my_hspeed == NO_MOVE_SPEED && my_vspeed == NO_MOVE_SPEED) || (my_hspeed == my_speed || my_vspeed == my_speed)
 {
     //enemy is not moving or was previously pursuing player; begin random movement
-    vspeed = choose(-1*wander_speed, 0, wander_speed);
-    hspeed = choose(-1*wander_speed, 0, wander_speed);
+    my_vspeed = choose(-1*wander_speed, NO_MOVE_SPEED, wander_speed);
+    my_hspeed = choose(-1*wander_speed, NO_MOVE_SPEED, wander_speed);
     
     enemy_check_direction();
 }
@@ -21,19 +25,19 @@ else
     //give 1% random chance per game step to change direction
     if (random(1) > 0.99)
     {
-        vspeed = choose(-1*wander_speed, 0, wander_speed);
-        hspeed = choose(-1*wander_speed, 0, wander_speed);
+        my_vspeed = choose(-1*wander_speed, NO_MOVE_SPEED, wander_speed);
+        my_hspeed = choose(-1*wander_speed, NO_MOVE_SPEED, wander_speed);
     }
     
-    if ((x > room_width && hspeed > 0) || (x < 0 && hspeed < 0))
+    if ((x > room_width && my_hspeed > NO_MOVE_SPEED) || (x < ROOM_BOUNDARY_X && my_hspeed < NO_MOVE_SPEED))
     {
         //moving outside room; turn around
-        hspeed = -1*hspeed;
+        my_hspeed = -1*my_hspeed;
     }
-    if ((y > room_height && vspeed > 0) || (y < 0 && vspeed < 0))
+    if ((y > room_height && my_vspeed > NO_MOVE_SPEED) || (y < ROOM_BOUNDARY_Y && my_vspeed < NO_MOVE_SPEED))
     {
         //moving outside room; turn around
-        vspeed = -1*vspeed
+        my_vspeed = -1*my_vspeed
     }
     
     enemy_check_direction();

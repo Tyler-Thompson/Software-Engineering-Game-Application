@@ -11,4 +11,3 @@ else if(result == 1)
 {
   player_loss();
 }
-

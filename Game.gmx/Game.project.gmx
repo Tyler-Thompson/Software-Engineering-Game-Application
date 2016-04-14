@@ -7,6 +7,9 @@
   <sounds name="sound">
     <sound>sound\shiny_trinkets_mp3</sound>
     <sound>sound\alert_wav</sound>
+    <sound>sound\minigame_music_mp3</sound>
+    <sound>sound\overworld_music_mp3</sound>
+    <sound>sound\battle_music_mp3</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\characters_spr</sprite>
@@ -27,21 +30,42 @@
     </sprites>
     <sprites name="characters">
       <sprite>sprites\priestess_spr</sprite>
+      <sprite>sprites\white_priestess_spr</sprite>
       <sprite>sprites\wizard_spr</sprite>
+      <sprite>sprites\white_wizard_spr</sprite>
       <sprite>sprites\paladin_spr</sprite>
+      <sprite>sprites\white_paladin_spr</sprite>
       <sprite>sprites\skeleton_spr</sprite>
       <sprite>sprites\purple_slime_spr</sprite>
       <sprite>sprites\empty_char_spr</sprite>
       <sprite>sprites\shopkeeper_spr</sprite>
+      <sprite>sprites\mage_spr</sprite>
+      <sprite>sprites\goblin_spr</sprite>
+      <sprite>sprites\goblin_archer_spr</sprite>
+      <sprite>sprites\assassin_spr</sprite>
+      <sprite>sprites\dragon_lord_spr</sprite>
+      <sprite>sprites\grim_reaper_spr</sprite>
     </sprites>
     <sprite>sprites\save_effect_spr</sprite>
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
+      <sprite>sprites\super_health_pot_spr</sprite>
+      <sprite>sprites\white_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
+      <sprite>sprites\black_tome_spr</sprite>
+      <sprite>sprites\green_tome_spr</sprite>
+      <sprite>sprites\rocks_spr</sprite>
+      <sprite>sprites\coins_spr</sprite>
+      <sprite>sprites\flame_blade_spr</sprite>
+      <sprite>sprites\diamond_armor_spr</sprite>
+      <sprite>sprites\armor_pot_spr</sprite>
+      <sprite>sprites\elixir_of_youth_spr</sprite>
     </sprites>
     <sprite>sprites\block_basic_spr</sprite>
+    <sprite>sprites\rock_dodge_paddle_spr</sprite>
+    <sprite>sprites\water_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\world_bkg</background>
@@ -71,6 +95,9 @@
       <script>scripts\gui_test_init.gml</script>
       <script>scripts\battle_test.gml</script>
       <script>scripts\item_test.gml</script>
+      <script>scripts\simulate_level_one.gml</script>
+      <script>scripts\cleanup_level_one.gml</script>
+      <script>scripts\fight_bosses_test.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -106,6 +133,9 @@
       <script>scripts\inventory_is_full.gml</script>
       <script>scripts\items_in_inventory.gml</script>
       <script>scripts\decrement_inventory_size.gml</script>
+      <script>scripts\custom_character.gml</script>
+      <script>scripts\get_player_initial_attack.gml</script>
+      <script>scripts\get_player_base_attack.gml</script>
     </scripts>
     <scripts name="menu_scripts">
       <script>scripts\room_change.gml</script>
@@ -155,12 +185,15 @@
       <script>scripts\enemy_information_controller_setup.gml</script>
       <script>scripts\add_enemy_information.gml</script>
       <script>scripts\get_enemy_information.gml</script>
+      <script>scripts\is_boss.gml</script>
+      <script>scripts\has_ability.gml</script>
     </scripts>
     <scripts name="effect_scripts">
       <script>scripts\effect_init.gml</script>
       <script>scripts\effect_render.gml</script>
       <script>scripts\effect_fade.gml</script>
       <script>scripts\effect_render_text.gml</script>
+      <script>scripts\draw_text_over_object.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
     <script>scripts\check_time.gml</script>
@@ -172,6 +205,13 @@
       <scripts name="enemy_battle_scripts">
         <script>scripts\enemy_choice.gml</script>
         <script>scripts\enemy_turn.gml</script>
+        <script>scripts\damage_player.gml</script>
+        <script>scripts\basic_attack.gml</script>
+        <script>scripts\do_nothing.gml</script>
+        <scripts name="special_abilities">
+          <script>scripts\firebreath.gml</script>
+          <script>scripts\touchofdeath.gml</script>
+        </scripts>
       </scripts>
       <scripts name="post_battle_scripts">
         <script>scripts\player_loss.gml</script>
@@ -193,6 +233,23 @@
       <script>scripts\buyable_collision_detect.gml</script>
       <script>scripts\buyable_render.gml</script>
     </scripts>
+    <scripts name="minigames_scripts">
+      <script>scripts\minigame_icon_init.gml</script>
+      <script>scripts\minigame_icon_render.gml</script>
+      <script>scripts\minigame_start.gml</script>
+      <script>scripts\rock_dodge_keyboard_listen.gml</script>
+      <script>scripts\instructions_init.gml</script>
+      <script>scripts\instructions_render.gml</script>
+      <script>scripts\rock_init.gml</script>
+      <script>scripts\rock_rotate.gml</script>
+      <script>scripts\rock_dodge_init.gml</script>
+      <script>scripts\rock_dodge_tick.gml</script>
+      <script>scripts\rock_move.gml</script>
+      <script>scripts\rock_render.gml</script>
+      <script>scripts\coin_reward.gml</script>
+      <script>scripts\minigame_end.gml</script>
+    </scripts>
+    <script>scripts\water_init.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -228,23 +285,28 @@
       <object>objects\rebind_up_obj</object>
       <object>objects\rebind_down_key</object>
       <object>objects\return_btn</object>
+      <object>objects\basic_attack_btn</object>
     </objects>
     <objects name="hobo_test_objs">
       <object>objects\TEST</object>
     </objects>
     <objects name="enemy_objs">
       <object>objects\enemy_parent_obj</object>
+      <object>objects\test_enemy_obj</object>
       <object>objects\skeleton_obj</object>
       <object>objects\purple_slime_obj</object>
+      <object>objects\goblin_warrior_obj</object>
+      <object>objects\goblin_archer_obj</object>
       <object>objects\enemy_battle_obj</object>
       <object>objects\enemy_information_controller</object>
+      <object>objects\dragon_lord_obj</object>
+      <object>objects\grim_reaper_obj</object>
     </objects>
     <objects name="effect_objs">
       <object>objects\exclamation_effect_obj</object>
       <object>objects\game_saved_effect_obj</object>
       <object>objects\equipped_item_effect_obj</object>
       <object>objects\draw_text_effect_obj</object>
-      <object>objects\object46</object>
     </objects>
     <objects name="player_objs">
       <object>objects\player_battle_obj</object>
@@ -257,14 +319,39 @@
       <object>objects\battle_controller_obj</object>
       <object>objects\item_information_controller</object>
     </objects>
-    <object>objects\basic_attack_btn</object>
-    <object>objects\item_obj</object>
-    <object>objects\block_parent</object>
-    <object>objects\block_basic_obj</object>
-    <object>objects\shopkeeper_obj</object>
-    <object>objects\buyable_parent</object>
-    <object>objects\buyable_health_potion_obj</object>
-    <object>objects\buyable_ice_sword_obj</object>
+    <objects name="NPC_objs">
+      <object>objects\shopkeeper_obj</object>
+      <object>objects\shady_merchant_obj</object>
+      <object>objects\minigame_npc_obj</object>
+    </objects>
+    <objects name="minigame_objs">
+      <object>objects\minigame_icon_parent</object>
+      <objects name="rock_dodge">
+        <object>objects\minigame_rock_dodge_icon_obj</object>
+        <object>objects\player_rock_dodge_obj</object>
+        <object>objects\rock_dodge_instructions_obj</object>
+        <object>objects\rock_obj</object>
+        <object>objects\coin_obj</object>
+        <object>objects\rock_dodge_controller_obj</object>
+      </objects>
+    </objects>
+    <objects name="buyable_objs">
+      <object>objects\buyable_parent</object>
+      <object>objects\item_obj</object>
+      <object>objects\buyable_health_potion_obj</object>
+      <object>objects\buyable_ice_sword_obj</object>
+      <object>objects\buyable_flame_blade_obj</object>
+      <object>objects\buyable_white_pot_obj</object>
+      <object>objects\buyable_armor_potion_obj</object>
+      <object>objects\buyable_elixir_of_youth_obj</object>
+      <object>objects\buyable_diamond_armor_obj</object>
+      <object>objects\buyable_super_health_pot_obj</object>
+    </objects>
+    <objects name="world_objs">
+      <object>objects\block_basic_obj</object>
+      <object>objects\block_parent</object>
+      <object>objects\water_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>
@@ -275,6 +362,7 @@
     <room>rooms\battle_room</room>
     <room>rooms\first_room</room>
     <room>rooms\second_room</room>
+    <room>rooms\rock_dodge_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

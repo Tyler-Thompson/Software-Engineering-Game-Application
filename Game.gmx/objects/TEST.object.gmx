@@ -66,6 +66,7 @@ battle_test();
     is_complete = (is_complete and gui_test());
     is_complete = (is_complete and enemy_test());
     is_complete = (is_complete and item_test());
+    is_complete = (is_complete and fight_bosses_test());
     if(is_complete)
     {
         //resets player controller to defaults

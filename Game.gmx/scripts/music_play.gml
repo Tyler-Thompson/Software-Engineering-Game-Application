@@ -9,21 +9,31 @@ var song_priority = 10;
 switch (room)
 {
     case menu_room:
-        var song_index = shiny_trinkets_mp3;
+        song_index = shiny_trinkets_mp3;
         break;
     case first_room:
-        var song_index = shiny_trinkets_mp3;
+        song_index = shiny_trinkets_mp3;
+        break;
+    case second_room:
+        song_index = overworld_music_mp3;
         break;
     case options_room:
-        var song_index = shiny_trinkets_mp3;
+        song_index = shiny_trinkets_mp3;
+        break;
+    case rock_dodge_room:
+        song_index = minigame_music_mp3;
+        break;
+    case battle_room:
+        song_index = battle_music_mp3;
         break;
     default:
-        var song_index = "";
-        audio_stop_all();
+        song_index = shiny_trinkets_mp3;
+        break;
 }
 
 //plays music
-if (!audio_is_playing(song_index)&&!song_index=="") 
+if (!audio_is_playing(song_index)) 
 { 
+    audio_stop_all();
     audio_play_sound(song_index, song_priority, 1); 
 }
