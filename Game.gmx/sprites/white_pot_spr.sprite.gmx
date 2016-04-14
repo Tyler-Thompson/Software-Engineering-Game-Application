@@ -20,6 +20,6 @@
   <width>24</width>
   <height>24</height>
   <frames>
-    <frame index="0">images\white_health_pot_spr_0.png</frame>
+    <frame index="0">images\white_pot_spr_0.png</frame>
   </frames>
 </sprite>

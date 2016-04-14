@@ -60,6 +60,15 @@ potion[3,2] = get_player_initial_attack();
 //sprite
 potion[3,3] = elixir_of_youth_spr;
 
+//name
+potion[4,0] = "white potion";
+//type
+potion[4,1] = "color change";
+//color
+potion[4,2] = "white";
+//sprite
+potion[4,3] = white_pot_spr;
+
 /******************************
 * WEAPONS
 ******************************/
