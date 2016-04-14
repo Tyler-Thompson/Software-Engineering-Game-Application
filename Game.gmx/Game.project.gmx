@@ -50,7 +50,7 @@
     <sprites name="items">
       <sprite>sprites\health_pot_spr</sprite>
       <sprite>sprites\super_health_pot_spr</sprite>
-      <sprite>sprites\white_health_pot_spr</sprite>
+      <sprite>sprites\white_pot_spr</sprite>
       <sprite>sprites\basic_armor_spr</sprite>
       <sprite>sprites\basic_sword_spr</sprite>
       <sprite>sprites\ice_sword_spr</sprite>
