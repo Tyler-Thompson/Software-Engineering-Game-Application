@@ -97,6 +97,7 @@
       <script>scripts\item_test.gml</script>
       <script>scripts\simulate_level_one.gml</script>
       <script>scripts\cleanup_level_one.gml</script>
+      <script>scripts\fight_bosses_test.gml</script>
     </scripts>
     <scripts name="hobo_test_scripts">
       <script>scripts\draw_test.gml</script>
@@ -192,6 +193,7 @@
       <script>scripts\effect_render.gml</script>
       <script>scripts\effect_fade.gml</script>
       <script>scripts\effect_render_text.gml</script>
+      <script>scripts\draw_text_over_object.gml</script>
     </scripts>
     <script>scripts\exit_game.gml</script>
     <script>scripts\check_time.gml</script>
@@ -204,6 +206,12 @@
         <script>scripts\enemy_choice.gml</script>
         <script>scripts\enemy_turn.gml</script>
         <script>scripts\damage_player.gml</script>
+        <script>scripts\basic_attack.gml</script>
+        <script>scripts\do_nothing.gml</script>
+        <scripts name="special_abilities">
+          <script>scripts\firebreath.gml</script>
+          <script>scripts\touchofdeath.gml</script>
+        </scripts>
       </scripts>
       <scripts name="post_battle_scripts">
         <script>scripts\player_loss.gml</script>
