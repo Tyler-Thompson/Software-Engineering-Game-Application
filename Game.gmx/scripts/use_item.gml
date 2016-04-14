@@ -54,6 +54,13 @@ if(not is_undefined(argument0) and argument0 != "" and is_in_inventory(argument0
         return false;
       }
     }
+    else if(item[1] == "color change")
+    {
+        if(item[2] == "white")
+        {
+            custom_character();
+        }
+    }
     else if(item[1] == "armor")
     {
       if(player_controller_obj.my_defense < player_controller_obj.max_defense)

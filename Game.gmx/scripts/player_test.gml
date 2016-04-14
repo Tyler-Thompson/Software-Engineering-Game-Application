@@ -105,6 +105,16 @@ switch(player_test_alarm)
         }
         break;
     case 11:
+        custom_character();
+        it("Confirming player sprite is white_paladin after paladin gets a custom sprte",player.sprite_index == white_paladin_spr, true);
+        change_player_sprite(wizard_spr);
+        custom_character();
+        it("Confirming player sprite is white_wizard after wizard gets a custom sprte",player.sprite_index == white_wizard_spr, true);
+        change_player_sprite(priestess_spr);
+        custom_character();
+        it("Confirming player sprite is white_priestess after priestess gets a custom sprte",player.sprite_index == white_priestess_spr, true);
+        break;
+    case 12:
         minigame_icon = instance_create(0,0,minigame_rock_dodge_icon_obj);
         it("Confirming a mini-game icon exists which allows the player to enter a mini-game",instance_number(minigame_rock_dodge_icon_obj)==1,true);
         with (minigame_icon)
@@ -112,7 +122,7 @@ switch(player_test_alarm)
             instance_destroy();
         }
         break;
-    case 12:
+    case 13:
         simulate_level_one();
         it("Ensures the first level contains a player by simulating it",instance_number(player_obj)!=0, true);
         it("Ensures the first level contains an item by simulating it",instance_number(buyable_health_potion_obj)!=0,true);
